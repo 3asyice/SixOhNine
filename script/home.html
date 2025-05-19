@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-  <meta name="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <title>Diário de 609 Carvalho</title>
   <meta name="description" content="O Diário de Carvalho foi algo raríssimo criado em seu tempo de soldado."/>
   <meta name="author" content="anonymous"/>
@@ -14,10 +14,14 @@
   <link rel="stylesheet" href="../style.css" type="text/css" media="all" />
 </head>
 <style type="text/css" media="all">
-
 @font-face {
   font-family: Regular;
   src: url('../assets/font/regular.ttf') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: Input-Sans;
+  src: url('../assets/font/InputSansNarrow-Regular.ttf') format('woff2');
   font-display: swap;
 }
 
@@ -26,19 +30,19 @@
   }
   html, body{
     margin:0;
-    background:#a1f6f1;
+    background:#FAFAFA;
   }
   header{
-    background:#000;
+    background:#FAFAFA;
     padding:1px;
     width:100%;
     display:inline-flex;
   }
   header h1{
     font-size: 32px;
-    color:#fff;
+    color:#000;
     margin: 20px 0 20px 20px;
-    font-family: 'Regular';
+    font-family: 'Input-Sans', sans-serif;
   }
   header button, section button{
     position:absolute;
@@ -46,7 +50,7 @@
 top:25px;
 border:none;
 background:none;
-color:#ffd;
+color:#000;
 font-size: 24px;
   }
 .x{
@@ -80,8 +84,56 @@ section.a div.sentence{
 section.a div.sentence p{
   margin:10px 50px 0 50px;
   color:#fff;
-  font-size: 16px;
-  font-family: 'Regular';
+  font-size: 12px;
+  font-family: 'Input-Sans';
+}
+section.sidebar{
+
+}
+section.sidebar div.b{
+margin:20px;
+background:#EEEEEE;
+border:2px dashed #f00;
+}
+section.sidebar div.b p{
+  margin:10px;
+  font-size: 14px;
+}
+section.sidebar div.b details{
+display: block;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+font-size: 14px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+summary{
+  list-style: none; /* Remove a seta padrão */
+            outline: none; /* Remove o contorno ao clicar */
+}
+section.sidebar div.b details a{
+  display:block;
+  color:blue;
+  margin:5px 20px 0 20px;
+}
+section.sidebar div.b details summary::marker {
+            content: ''; /* Remove o marcador padrão */
+        }
+
+       section.sidebar div.b details summary::after {
+            content: '▼'; /* Adiciona uma seta personalizada */
+            margin-left: 10px; /* Espaçamento entre o texto e a seta */
+            transform: rotate(0deg); /* Seta na posição padrão */
+            transition: transform 0.2s; /* Animação ao abrir/fechar */
+        }
+
+section.sidebar div.b details[open] summary::after {content: '▲';
+        }
+details a{
+  font-size: 12px;
+  text-decoration: none;
 }
 </style>
 <body>
@@ -91,6 +143,20 @@ section.a div.sentence p{
 </header>
 <section class="x" id="x">
   <button onclick="menu()">ᚷ</button>
+</section>
+<section class="sidebar">
+<div class="b">
+  <details>
+    <summary>
+      Sidebar
+    </summary>
+<a href="">Soldados</a>
+<a href="">Recrutas</a>
+<a href="">Sargentos</a>
+<a href="">Coroneis</a>
+  </details>
+<p>Principios e valores</p>
+</div>
 </section>
 <section class="page">
 <div class="quote">
