@@ -40,7 +40,7 @@
     margin: 20px 0 20px 20px;
     font-family: 'Regular';
   }
-  header button{
+  header button, section button{
     position:absolute;
     right:25px;
 top:25px;
@@ -49,13 +49,74 @@ background:none;
 color:#ffd;
 font-size: 24px;
   }
+.x{
+background:red;
+position:fixed;
+right:0;left:0;bottom:0;top:0;
+display:none;
+overflow-y:auto;
+}
+section.page{
+  margin:0 20px 0 20px;
+}
+section.page p{
+  font-size: 14px;
+  color:#fff;
+  padding:0px 20px 0px 20px;
+}
+section.page div.quote {
+  padding:20px 0 20px 0;
+  margin:0 20px 0 20px;
+  background:#0f0f0f;
+}
+section.page div.sentence{
+  background:#7F7F7F;
+  padding:5px 0 1px 0;
+}
 </style>
 <body>
 <header>
   <h1>SixOhNine</h1>
-  <button>☰</button>
-</header> 
-  
+  <button onclick="menu()">☰</button>
+</header>
+<section class="x" id="x">
+  <button onclick="menu()">ᚷ</button>
+</section>
+<section class="page">
+<div class="quote">
+    <p><i>❝ Não é tanque de guerra e, sim, um carro de combate</i>.</p>
+</div>
+<div class="quote">
+<p><i>❝ Camuflagem é esconder e não chamar atenção</i>.</p>
+</div>
+<div class="quote">
+<p><i>❝ No fim de uma luta vem uma recompensa</i>.</p>
+</div>
+<div class="quote">
+<p><i>❝ O que acontecer acontece</i>.</p>
+</div>
+<div class="quote">
+<p><i>❝ Educação abre portas</i>.</p>
+</div>
+</section>
+<section class="page">
+<div class="sentence">
+<p>Duque de Caxias foi o patrono do Exército e Comandante das Armas.</p>
+<p>Duque de Caxias ou Luís Alves de Lima e Silva.</p>
+</div>
+</section>
+
+
+<script type="text/javascript" charset="utf-8">
+var x = document.getElementById('x');
+var y = false;
+
+function menu() {
+  y = !y;
+  x.style.display = y ?
+  'block' : 'none';
+}
+</script>
 </body>
 
 </html>
