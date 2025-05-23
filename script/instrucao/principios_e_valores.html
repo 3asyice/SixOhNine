@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Diário de 609 Carvalho</title>
+  <meta name="description" content="O Diário de Carvalho foi algo raríssimo criado em seu tempo de soldado."/>
+  <meta name="author" content="anonymous"/>
+  <meta name="copyright" content="Sd 609® Carvalho"/>
+  <meta name="keywords" content="Diário de um Soldado, Diário Pessoal, Revelações, Crítica, Aperfeiçoamento Militar, Soldado, Ruínas"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="icon" href="../../assets/img/icon.jpg">
+  <link rel="stylesheet" href="../../style.css" type="text/css" media="all" />
+</head>
+<style type="text/css" media="all">
+@font-face {
+  font-family: Regular;
+  src: url('../../assets/font/regular.ttf') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: Input-Sans;
+  src: url('../../assets/font/InputSansNarrow-Regular.ttf') format('woff2');
+  font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+  }
+  html, body{
+    margin:0;
+    background:#eeeeee;
+  }
+  header{
+    background:#FAFAFA;
+    padding:1px;
+    width:100%;
+    display:inline-flex;
+  }
+  header h1{
+    font-size: 32px;
+    color:#000;
+    cursor:pointer;
+    margin: 20px 0 20px 20px;
+    font-family: 'Input-Sans', sans-serif;
+  }
+  header button, section button{
+    cursor:pointer;
+    position:absolute;
+    right:25px;
+top:25px;
+border:none;
+background:none;
+color:#000;
+font-size: 24px;
+  }
+.x{
+background:red;
+position:fixed;
+right:0;left:0;bottom:0;top:0;
+display:none;
+overflow-y:auto;
+}
+section.page, section.page img{
+  margin:0 20px 0 20px;
+}
+section.page p{
+  font-size: 14px;
+  color:#fff;
+  padding:0px 20px 0px 20px;
+}
+section.page div.quote {
+  padding:20px 0 20px 0;
+  margin:0 20px 0 20px;
+  background:#0f0f0f;
+}
+section.a{
+  margin:30px 20px 0 20px;
+  
+}
+section.a div.sentence{
+  background:#fff;
+  padding:20px 0 20px 0;
+  
+}
+section.a div.sentence p{
+  margin:10px 10px 30px 10px;
+  color:#000;
+  font-size: 12px;
+  font-family: 'Input-Sans';
+  line-height: 20px;
+}
+h2{
+  margin:10px 10px 0 10px;
+}
+section.sidebar{
+
+}
+section.sidebar div.b{
+margin:20px;
+background:#EEEEEE;
+border:1px solid #A1A1A1;
+}
+section.sidebar div.b p{
+  margin:10px;
+  font-size: 14px;
+}
+section.sidebar div.b details{
+display: block;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+font-size: 14px;
+font-weight: 300;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+summary{
+list-style: none; 
+outline: none;
+}
+section.sidebar div.b details a{
+  display:block;
+  color:blue;
+  margin:5px 20px 0 20px;
+}
+section.sidebar div.b details summary::marker {
+            content: '';
+        }
+
+       section.sidebar div.b details summary::after {
+            content: '▼';
+            color:#B5B5B5;
+            margin-left: 10px;
+            transform: rotate(0deg);
+            transition: transform 0.2s;
+        }
+
+section.sidebar div.b details[open] summary::after {content: '▲';
+        }
+details a{
+  font-size: 12px;
+  text-decoration: none;
+}
+</style>
+<body>
+<header>
+  <h1>SixOhNine</h1>
+  <button onclick="menu()">☰</button>
+</header>
+<section class="x" id="x">
+  <button onclick="menu()">ᚷ</button>
+</section>
+<section class="sidebar">
+<div class="b">
+  <details>
+    <summary>
+      Sidebar
+    </summary>
+<a href="../../script/sidebar/militares.html">Militares</a>
+<a href="">Instruções</a>
+<a href="">Notícias</a>
+<a href="section/ebfacil.html">Seções</a>
+  </details>
+</div>
+</section>
+<section class="a">
+<div class="sentence">
+
+<style>
+ div.table_a{
+    margin:0 10px 0 10px;
+    padding-bottom: 5px;
+    background:#eeeeee;
+      }
+  div.table{
+    margin:0 50px 0 10px;
+padding-bottom: 5px;
+background:#eeeeee;
+border:1px solid #A1A1A1;
+  }
+  ul li{
+    color:#A1A1A1;
+  }
+  ul li a{
+    text-decoration: none;
+    font-size: 12px;
+  }
+  img {
+    margin:10px;
+  }
+
+  cite, h5, h4, h2{
+    margin:10px;
+    font-family: 'Input-Sans';
+  }
+
+
+</style>
+<div class="table">
+<p>Tabela de conteúdo</p>
+
+<ul>
+<li><a href="#A10">Princípios e Valores</a></li>
+<li><a href="#B20">Fundamentos Constitucionais e Legais dos Princípios e Valores</a></li>
+<li><a href="#C30">Hierarquia E Disciplina Como Pilares Institucionais</a></li>
+<li><a href="#D40">Defesa da Pátria e Garantia dos Poderes Constitucionais</a></li>
+<li><a href="#E50">O Estatuto dos Militares (Lei nº 6.880/1980) e seus Preceitos Éticos</a></li>
+
+</ul>
+
+</div>
+  <h2 id="A10">Princípios e Valores</h2>
+<p>A relevância dos princípios e valores militares transcende a mera formalidade institucional, constituindo os pilares sobre os quais se erguem a identidade, a coesão e a eficácia de qualquer força armada. As Forças Armadas, por sua natureza singular, são instituições de Estado, fundamentadas em preceitos éticos e morais que devem perdurar independentemente de governos e conjunturas políticas. A compreensão da evolução desses valores é crucial para contextualizar o papel do Exército Brasileiro na sociedade e no Estado ao longo de sua história.
+</p>
+<div class="table_a">
+<p onclick="location.href='https://www.facebook.com/planetadelivrosbrasil/videos/10155912781748825/?mibextid=rS40aB7S9Ucbxw6v'"><span style="font-size: 27px;">❝</span> Se você quer mudar o mundo, comece arrumando a sua cama.</p>
+<p style="text-align: right;margin-right: 20px;">- <cite>WILLIAM H. MCRAVEN</cite></p>
+</div>
+
+</div>
+</section>
+<section class="a">
+<div class="sentence">
+
+<h4 id="B20">Fundamentos Constitucionais e Legais dos Princípios e Valores</h4>
+<p>A estrutura e o funcionamento do Exército Brasileiro são intrinsecamente moldados por um arcabouço legal e doutrinário que estabelece seus princípios e valores fundamentais. Esses fundamentos garantem a estabilidade e a direção da instituição, definindo sua missão e a conduta esperada de seus integrantes.</p>
+
+<h5 id="C30">Hierarquia e Disciplina como Pilares Institucionais
+</h5>
+<p>A Hierarquia e a Disciplina são explicitamente reconhecidas como a base institucional das Forças Armadas, conforme estabelecido no Art. 14 da Lei nº 6.880/1980, o Estatuto dos Militares. Nesses preceitos, a autoridade e a responsabilidade aumentam progressivamente com o grau hierárquico. A hierarquia militar compreende a ordenação da autoridade em diferentes níveis, definida por postos ou graduações, e, dentro do mesmo posto ou graduação, pela antiguidade. A disciplina, por sua vez, é a rigorosa observância e o acatamento integral das leis, regulamentos, normas e disposições que fundamentam o organismo militar, coordenando seu funcionamento regular e harmônico, e se traduz no perfeito cumprimento do dever por parte de todos os seus componentes. A manutenção da disciplina e o respeito à hierarquia são considerados essenciais em todas as circunstâncias da vida militar, abrangendo militares da ativa, da reserva remunerada e reformados.
+</p>
+<p>Historicamente, a obediência tem sido um princípio fundamental das Forças Armadas brasileiras. Constituições anteriores, como a de 1824 e a de 1891, já previam que a força armada era "essencialmente obediente", embora sempre qualificada por "dentro dos limites da lei". O Decreto-Lei nº 3.864-41, de 1941, reforçava essa obediência estrita, indicando que "a decisão final do chefe é de sua inteira responsabilidade e encerra qualquer discussão sobre o assunto". No entanto, o Regulamento Disciplinar do Exército (RDE), Decreto nº 90.608/1984, introduziu uma nuance importante ao permitir que o subordinado solicite esclarecimentos ou até mesmo a confirmação por escrito de uma ordem caso ela contrarie um preceito regulamentar. Essa permissão, formalizada em um regulamento disciplinar, representa uma evolução significativa. Não se trata apenas de uma compreensão implícita, mas de um direito codificado dentro da estrutura disciplinar. Essa mudança, particularmente perceptível em regulamentos pós-Regime Militar (1964-1985), reflete um esforço consciente para alinhar a disciplina militar mais estreitamente com o Estado de Direito e os princípios democráticos. Sugere-se um afastamento da obediência inquestionável em direção a um conceito de dever mais legalmente delimitado e eticamente informado, possivelmente como salvaguarda contra abusos de autoridade e como resposta às experiências de governo autoritário. Essa formalização indica uma maturação na relação civil-militar, onde o funcionamento interno das forças armadas está cada vez mais sujeito a normas legais e constitucionais mais amplas.
+</p>
+<h5 id="D40">Defesa da Pátria e Garantia dos Poderes Constitucionais
+</h5>
+<p>O propósito primordial das Forças Armadas, conforme o Art. 142 da Constituição Federal de 1988, é a "Defesa da Pátria" e a "Garantia dos Poderes Constitucionais". A defesa da Pátria engloba a proteção do território, da soberania e dos interesses nacionais contra ameaças externas, sejam elas potenciais ou manifestas.
+<br>Além disso, as Forças Armadas podem atuar na "Garantia da Lei e da Ordem (GLO)", mas essa atuação é estritamente subsidiária, mitigada e em casos excepcionais, ocorrendo apenas após esgotados os instrumentos destinados à preservação da ordem pública e da incolumidade das pessoas e do patrimônio, conforme o Art. 15 da Lei Complementar nº 97/1999. Esse caráter "nacional e permanente" das Forças Armadas tem sido reiterado desde a Constituição de 1891.
+<br>A redefinição do papel interno do Exército após o período autoritário é notável. A Constituição de 1891 atribuía às forças armadas a "manutenção das leis no interior" , uma formulação ampla e potencialmente aberta. Em contraste, a Constituição de 1988 estabelece a "Garantia da Lei e da Ordem (GLO)" de forma explicitamente "subsidiária, mitigada e em casos excepcionais". Essa mudança de uma "manutenção das leis" para uma "garantia da lei e da ordem" estritamente qualificada representa uma redefinição fundamental do papel da instituição na segurança interna. A inclusão das qualificações "subsidiária, mitigada e em casos excepcionais" é uma limitação legal crítica. Essa redefinição é uma resposta legal e doutrinária direta e deliberada ao extenso e, por vezes, controverso envolvimento militar na política doméstica e na repressão durante o regime militar de 1964-1985. Ela representa um esforço constitucional para reforçar o controle civil sobre as Forças Armadas e prevenir futuras intervenções militares excessivas nos assuntos civis. As restrições legais explícitas visam assegurar que o foco principal do Exército permaneça na defesa externa, e que seu papel interno seja estritamente limitado a situações de emergência sob autoridade civil, fortalecendo assim as instituições e os valores democráticos.
+</p>
+<h5 id="E50">O Estatuto dos Militares (Lei nº 6.880/1980) e seus Preceitos Éticos
+</h5>
+<p>A Lei nº 6.880/1980, conhecida como Estatuto dos Militares, é um marco legal que codifica os princípios e valores que regem a conduta e a organização das Forças Armadas. Além da hierarquia e disciplina, o Estatuto detalha valores militares essenciais e preceitos de ética militar.
+</p>
+<p>Os Valores Militares Essenciais (Art. 27) incluem:
+</p>
+<ul>
+  <li><p>Patriotismo: A vontade inabalável de cumprir o dever militar e o solene juramento de fidelidade à Pátria, mesmo com o sacrifício da própria vida.
+</p></li>
+<li><p>Civismo e Culto das Tradições Históricas: A valorização da cidadania e da história nacional.
+</p></li>
+<li><p>Fé na Missão Elevada das Forças Armadas: A crença na importância e no propósito superior das instituições militares.
+</p></li>
+<li><p>Espírito de Corpo: O orgulho do militar pela organização onde serve.
+</p></li>
+<li><p>Amor à Profissão das Armas e Entusiasmo: A paixão pela carreira militar e a dedicação com que é exercida.
+</p></li>
+<li><p>Aprimoramento Técnico-Profissional: A busca contínua por melhoria e excelência nas habilidades e conhecimentos militares.
+</p></li>
+</ul>
+<p>Os Preceitos de Ética Militar (Art. 28) impõem uma conduta moral e profissional irrepreensível, exigindo que o militar:
+</p>
+<ul>
+<li><p>Ame a verdade e a responsabilidade como fundamento de dignidade pessoal.
+</p></li>
+<li><p>Exerça, com autoridade, eficiência e probidade, as funções decorrentes do cargo.
+</p></li>
+<li><p>Respeite a dignidade da pessoa humana.
+</p></li>
+<li><p>Cumpra e faça cumprir as leis, regulamentos, instruções e ordens das autoridades competentes.
+</p></li>
+<li><p>Seja justo e imparcial no julgamento de atos e na apreciação do mérito dos subordinados.
+</p></li>
+<li><p>Zele pelo preparo próprio (moral, intelectual e físico) e dos subordinados, visando ao cumprimento da missão comum.
+</p></li>
+<li><p>Empregue todas as energias em benefício do serviço.
+</p></li>
+<li><p>Pratique a camaradagem e desenvolva o espírito de cooperação.
+</p></li>
+<li><p>Seja discreto em atitudes, maneiras e linguagem (escrita e falada).
+</p></li>
+<li><p>Abstenha-se de tratar, fora do âmbito apropriado, de matéria sigilosa.</p></li>
+<li><p>Acate as autoridades civis.</p></li>
+<li><p>Cumpra seus deveres de cidadão.</p></li>
+<li><p>Proceda de maneira ilibada na vida pública e particular.</p></li>
+<li><p>Observe as normas da boa educação.</p></li>
+<li><p>Garanta assistência moral e material ao lar e conduza-se como chefe de família exemplar.</p></li>
+<li><p>Conduza-se, mesmo fora do serviço ou na inatividade, de modo a não prejudicar os princípios da disciplina, respeito e decoro militar.</p></li>
+<li><p>Abstenha-se de usar o posto ou graduação para obter facilidades pessoais ou encaminhar negócios particulares/de terceiros.</p></li>
+<li><p>Abstenha-se, na inatividade, do uso das designações hierárquicas em atividades político-partidárias, comerciais, industriais, para discutir assuntos políticos/militares na imprensa (exceto técnicos e autorizados), e no exercício de cargo ou função civil.</p></li>
+<li><p>Zele pelo bom nome das Forças Armadas e de seus integrantes, obedecendo e fazendo obedecer aos preceitos da ética militar.</p></li>
+</ul>
+<p>Os Deveres Militares (Art. 31) emanam de vínculos racionais e morais que ligam o militar à Pátria e ao seu serviço, compreendendo essencialmente:
+</p>
+<ul>
+<li><p>Dedicação e fidelidade à Pátria, defendendo sua honra, integridade e instituições, mesmo com o sacrifício da própria vida.</p></li>
+<li><p>Culto aos Símbolos Nacionais.</p></li>
+<li><p>Probidade e lealdade em todas as circunstâncias.</p></li>
+<li><p>Disciplina e respeito à hierarquia.</p></li>
+<li><p>Rigoroso cumprimento das obrigações e das ordens.</p></li>
+<li><p>Obrigação de tratar o subordinado dignamente e com urbanidade.</p></li>
+</ul>
+
+
+
+</ul>
+
+
+</div>
+  
+</section>
+
+
+
+
+<script type="text/javascript" charset="utf-8">
+var x = document.getElementById('x');
+var y = false;
+
+function menu() {
+  y = !y;
+  x.style.display = y ?
+  'block' : 'none';
+}
+</script>
+</body>
+
+</html>
