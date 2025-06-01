@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Diário de 609 Carvalho</title>
+  <meta name="description" content="O Diário de Carvalho foi algo raríssimo criado em seu tempo de soldado."/>
+  <meta name="author" content="anonymous"/>
+  <meta name="copyright" content="Sd 609® Carvalho"/>
+  <meta name="keywords" content="Diário de um Soldado, Diário Pessoal, Revelações, Crítica, Aperfeiçoamento Militar, Soldado, Ruínas"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="icon" href="../../assets/img/icon.jpg">
+  <link rel="stylesheet" href="../../style.css" type="text/css" media="all" />
+</head>
+<style type="text/css" media="all">
+@font-face {
+  font-family: Regular;
+  src: url('../../assets/font/regular.ttf') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: Input-Sans;
+  src: url('../../assets/font/InputSansNarrow-Regular.ttf') format('woff2');
+  font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+  }
+  html, body{
+    margin:0;
+    background:#FAFAFA;
+  }
+  header{
+    background:#FAFAFA;
+    padding:1px;
+    width:100%;
+    display:inline-flex;
+  }
+  header h1{
+    font-size: 32px;
+    color:#000;
+    cursor:pointer;
+    margin: 20px 0 20px 20px;
+    font-family: 'Input-Sans', sans-serif;
+  }
+  header button, section button{
+    cursor:pointer;
+    position:absolute;
+    right:25px;
+top:25px;
+border:none;
+background:none;
+color:#000;
+font-size: 24px;
+  }
+.x{
+background:red;
+position:fixed;
+right:0;left:0;bottom:0;top:0;
+display:none;
+overflow-y:auto;
+}
+section.page, section.page img{
+  margin:0 20px 0 20px;
+}
+section.page p{
+  font-size: 14px;
+  color:#fff;
+  padding:0px 20px 0px 20px;
+}
+section.page div.quote {
+  padding:20px 0 20px 0;
+  margin:0 20px 0 20px;
+  background:#0f0f0f;
+}
+section.a{
+  margin:30px 20px 0 20px;
+  
+}
+section.a div.sentence{
+  background:#eeeeee;
+  padding:20px 0 20px 0;
+  
+}
+section.a div.sentence p{
+  margin:10px 10px 30px 10px;
+  color:#000;
+  font-size: 12px;
+  font-family: 'Input-Sans';
+}
+h2{
+  margin:10px 10px 0 10px;
+}
+section.sidebar{
+
+}
+section.sidebar div.b{
+margin:20px;
+background:#EEEEEE;
+border:1px solid #E1E1E1;
+}
+section.sidebar div.b p{
+  margin:10px;
+  font-size: 14px;
+}
+section.sidebar div.b details{
+display: block;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+font-size: 14px;
+font-weight: 300;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+summary{
+list-style: none; 
+outline: none;
+}
+section.sidebar div.b details a{
+  display:block;
+  color:blue;
+  margin:5px 20px 0 20px;
+}
+section.sidebar div.b details summary::marker {
+            content: '';
+        }
+
+       section.sidebar div.b details summary::after {
+            content: '▼';
+            margin-left: 10px;
+            transform: rotate(0deg);
+            transition: transform 0.2s;
+        }
+
+section.sidebar div.b details[open] summary::after {content: '▲';
+        }
+details a{
+  font-size: 12px;
+  text-decoration: none;
+}
+</style>
+<body>
+<header>
+  <h1>SixOhNine</h1>
+  <button onclick="menu()">☰</button>
+</header>
+<section class="x" id="x">
+  <button onclick="menu()">ᚷ</button>
+</section>
+<section class="sidebar">
+<div class="b">
+  <details>
+    <summary>
+      Sidebar
+    </summary>
+<a href="../../script/sidebar/militares.html">Militares</a>
+<a href="../../script/sidebar/instrucao.html">Instruções</a>
+<a href="">Notícias</a>
+<a href="section/ebfacil.html">Seções</a>
+  </details>
+</div>
+</section>
+<section class="a">
+<div class="sentence">
+
+<style>
+  div.table{
+    margin:0 10px 0 10px;
+    border:1px solid #A1A1A1;
+  }
+  ul li{
+    color:#A1A1A1;
+  }
+  ul li a{
+    text-decoration: none;
+    font-size: 12px;
+  }
+  img, iframe{
+    margin:10px;
+  }
+  h2{
+    font-family: sans-serif;
+  }
+
+
+</style>
+<div class="table">
+<center>
+<h2>Fotógrafo Luciano</h2>
+</center>
+<img width="95%" src="../../assets/img/cv/luciano-souza.jpg" alt="luciano" />
+
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Conhecido por</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Luciano Souza</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Ocupação</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Fotógrafo</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Apelido</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">-</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Esposa</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Letícia De Lurdes Salves</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Cidade Natal</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">São Sepé, RS, Brasil</p>
+</div>
+
+
+</div>
+
+</div>
+</section>
+<section class="a">
+<div class="sentence">
+<p><span style="font-size: 27px;">❝</span> <i>Mas você que tem a letra bonita, não vai comprar as minhas fotos, Carvalho?</i></p>
+<p>
+Luciano, filho fotógrafo, começou a auxiliar o pai na fotografia como iluminador em 1984, aos 7 anos de idade. Souza desejou servir o Exército e ser fotógrafo. Em 1996, Luciano serviu o Exército no 29º Batalhão de Infantaria Blindado, em fevereiro de 1997 deu baixa do Exército Brasileiro. Voltou para São Sepé, a sua cidade natal, montou uma loja de molduras e porta retrato para fotografia, em paralelo Luciano trabalhava com o seu pai auxiliando na fotografia.
+</p>
+<p>
+Em fevereiro de 1998, Luciano conheceu um rapaz que trabalhava como cantineiro no 7º Batalhão de Infantaria Blindado, entre uma conversa e outra falaram sobre suas respectivas ocupações profissionais. Luciano soube que o fotógrafo do 7º BIB havia se aposentado, na semana pós Carnaval daquele ano, foi agendado uma reunião com o RP, Luciano foi até a <strong>Organização Militar</strong> (OM) e conversaram, após algumas semanas, Luciano estava trabalhando naquele quartel general.
+</p>
+<p>
+O pai de Luciano deu o equipamento para iniciar os trabalhos, então Luciano viajou de São Sepé com o equipamento, com roupas e vontade de trabalhar. A partir daquele ano, começou a ficar conhecido nos quartéis, começaram a me chamar para outras Organizações Militares e seu trabalho foi se expandindo. 
+</p>
+<p>
+Em 2002 Luciano se casou, constituiu uma família. Entre os trabalhos do Exército, Luciano fazia eventos civis, tais como: aniversários, casamentos, formaturas etc... São mais de mil eventos realizados neste segmento. Com a chegada do <strong>1º Regimento de Carros de Combate</strong> em Santa Maria, o seu trabalho ganhou mais destaque. 
+</p>
+<p>
+Em 2006, chegou uma ordem para fazer fotos do <strong>Leopard</strong> 1 a 1 para algum lugar (não se lembra exatamente, portanto acredita-se que tenha sido para <strong>CCONSEX</strong>).
+</p>
+<p>
+Passados alguns dias, Luciano falou com o Cmt, na época era o <strong>Cel Dansa</strong> (Em Memória), Luciano sugeriu fazer uma Exposição fotográfica dos Carros de Combate que estavam chegando em Santa Maria. coronel Dansa concordou, porém, coronel Dansa disse que o custo seria tudo por conta de Luciano, então Luciano topou, a exposição foi um sucesso, Luciano vendeu muitos quadros naquele dia (encomendas). 
+</p>
+<p>
+Depois disso o trabalho de Luciano tomou outra dimensão, começou a fazer vários trabalhos para outras Organizações Militares em Santa Maria, a partir daí outras OMS fora da cidade conheceram Luciano pelo trabalho dos <strong>BLINDADOS</strong>, após esse período surgiu a ideia de fazer um <strong>Livro Fotográfico</strong> de fotos dos carros de combate.
+</p>
+<p>
+Em 2009 Luciano lançou o livro <strong>Blindados no Exército Brasileiro</strong>. Logo após realizou uma exposição fotográfica no quartel general do exército brasileiro em Brasília. Neste mesmo ano, Luciano recebeu o convite do <strong>Gen Adhemar</strong> chefe do <strong>CConSEx</strong> para fazer um trabalho no <strong>Haiti</strong>, em outubro daquele ano partiu para a missão. 
+</p>
+<p>
+Em 2012 teve a oportunidade de receber um convite do <strong>Cel Lange</strong> para fotografar os Astros. Após esse trabalho, na mesma viagem, Luciano foi para Manaus fazer outro trabalho.
+</p>
+<p>
+Em 2016 teve outra oportunidade de realizar o estágio de jornalista em áreas de conflito no <strong>CCOPAB</strong>.
+</p>
+<p>
+Em 2017 foi convidado pelo <strong>Gen Miotto</strong> para fazer o <strong>Estágio de Adaptação a Selva</strong> no 1° BIS em Manaus com um grupo de estudantes e jornalistas.
+</p>
+<p>Em 2018, Luciano teve uma oportunidade de acompanhar a <strong>6ª Brigada na Operação Acolhida</strong> em Boa Vista/RO. Realizou a cobertura fotográfica do exército brasileiro juntamente com o exército da Argentina em campos de instrução daquele país. Também realizou diversos apoios fotográficos em operações do <strong>Comando do CMS</strong>, <strong>3ª Divisão do Exército</strong> e 6ª Brigada de Infantaria Blindada. Luciano realizou diversas exposições fotográficas em Santa Maria, São Sepé, Bento Gonçalves e Brasília, divulgando a atividade militar para o público civil.
+</p>
+<p>
+Luciano possui diversos diplomas de <strong>Amigo das OM</strong> e também SU. Dentre elas: <strong>3ª DE</strong>; <strong>6ª Bda Inf Bld</strong>; <strong>Cmdo AD/3; 29º BIB</strong>; <strong>4º Blog</strong>; <strong>C I Bld</strong>; <strong>1ºRCC</strong>; <strong>7º BIB</strong>; <strong>3º Gac Ap</strong>; <strong>CISM, 4º RCC</strong>; <strong>Base Adm SM</strong>; <strong>CPOR</strong>; <strong>6 BIAAAE AP</strong>; <strong>6º Esqd C Mec</strong>; <strong>Cia C 6ª Bda</strong>; 
+<strong>Cia C 3ª DE</strong>; <strong>3ª Cia Com</strong>; <strong>26º Pel PE Mec</strong> 
+</p>
+<p>
+Luciano teve a oportunidade de realizar um estágio de fotografia para o GOE, e também um estágio de fotografia para os alunos do CMSM. Possuidor das seguintes medalhas: <strong>Colaborador E Mérito</strong>, <strong>Medalha Exército Brasileiro</strong>, <strong>Medalha Colégio Do Vagão</strong>, <strong>Comenda Boi De Botas</strong>, <strong>Medalha Do Pacificador</strong>. 
+</p>
+<p>
+Luciano Souza venceu o 2º e 4º Festival de fotografias do Exército Brasileiro. Entretanto tirou 2º e 3º lugar no Concurso dos 100 anos da Escom. Luciano tem uma fotografia vencedora de uma atividade militar publicada no livro dos 60 anos de Brasília. Os sonhos de Luciano incluem: Sair do Brasil e fotografar diversas atividades do exército brasileiro. Também realizar a impressão de um livro sobre o Leopard e um outro livro sobre os seus 25 anos de trabalho junto ao exército brasileiro em 2023, e outro livro sobre a 6ª Brigada, uma impressão de um livro sobre a a chegada dos M109, outro livro sobre EV: “Ser soldado, eu fui... e você?”. Todos os trabalhos acima possuem ilustrações fotográficas impressas em forma de livro, Luciano deseja pendurar por muito no tempo. Luciano Souza deseja no futuro que as as pessoas saibam como o exército brasileiro dos dias atuais realmente se parece.
+</p>
+<p>
+O sonho do fotógrafo é de se tornar conhecido pelo Exército Brasileiro.
+</p>
+<p>Redes sociais:</p>
+<div style="display:block; line-break: break-all; 95%;" class="table">
+<center>
+<img onclick="location.href='https://www.facebook.com/estudioluciano.souza'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
+<p style="font-size: 16px;" onclick="location.href='https://www.facebook.com/estudioluciano.souza'">Luciano Souza</p>
+</center>
+  <br>
+
+<center>
+<img onclick="location.href='https://www.instagram.com/lucianosouza3101'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
+<p style="font-size: 16px;" onclick="location.href='https://www.instagram.com/lucianosouza3101'">lucianosouza3101</p>
+</center>
+<br>
+<center>
+<img onclick="location.href='#blank'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x">
+<p style="font-size: 16px;" onclick="location.href='#blank'">404_ERROЯ</p>
+</center>
+<br>
+<center>
+  <img onclick="location.href='https://youtube.com/@lucianosouzafoto'" width="35px" height="35px" src="../../assets/img/other/youtube.png" alt="youtube de luciano souza">
+  <p style="font-size: 16px;" onclick="location.href='https://youtube.com/@lucianosouzafoto'">lucianosouzafoto</p>
+</center>
+</div>
+
+</div>
+  
+</section>
+
+
+
+<script type="text/javascript" charset="utf-8">
+var x = document.getElementById('x');
+var y = false;
+
+function menu() {
+  y = !y;
+  x.style.display = y ?
+  'block' : 'none';
+}
+</script>
+</body>
+
+</html>
