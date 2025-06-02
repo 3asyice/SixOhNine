@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Diário de 609 Carvalho</title>
+  <meta name="description" content="O Diário de Carvalho foi algo raríssimo criado em seu tempo de soldado."/>
+  <meta name="author" content="anonymous"/>
+  <meta name="copyright" content="Sd 609® Carvalho"/>
+  <meta name="keywords" content="Diário de um Soldado, Diário Pessoal, Revelações, Crítica, Aperfeiçoamento Militar, Soldado, Ruínas"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="icon" href="../../assets/img/icon.jpg">
+  <link rel="stylesheet" href="../../style.css" type="text/css" media="all" />
+</head>
+<style type="text/css" media="all">
+@font-face {
+  font-family: Regular;
+  src: url('../../assets/font/regular.ttf') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: Input-Sans;
+  src: url('../../assets/font/InputSansNarrow-Regular.ttf') format('woff2');
+  font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+  }
+  html, body{
+    margin:0;
+    background:#eeeeee;
+  }
+  header{
+    background:#FAFAFA;
+    padding:1px;
+    width:100%;
+    display:inline-flex;
+  }
+  header h1{
+    font-size: 32px;
+    color:#000;
+    cursor:pointer;
+    margin: 20px 0 20px 20px;
+    font-family: 'Input-Sans', sans-serif;
+  }
+  header button, section button{
+    cursor:pointer;
+    position:absolute;
+    right:25px;
+top:25px;
+border:none;
+background:none;
+color:#000;
+font-size: 24px;
+  }
+.x{
+background:red;
+position:fixed;
+right:0;left:0;bottom:0;top:0;
+display:none;
+overflow-y:auto;
+}
+section.page, section.page img{
+  margin:0 20px 0 20px;
+}
+section.page p{
+  font-size: 14px;
+  color:#fff;
+  padding:0px 20px 0px 20px;
+}
+section.page div.quote {
+  padding:20px 0 20px 0;
+  margin:0 20px 0 20px;
+  background:#0f0f0f;
+}
+section.a{
+  margin:30px 20px 0 20px;
+  
+}
+section.a div.sentence{
+  background:#fff;
+  padding:20px 0 20px 0;
+  
+}
+section.a div.sentence p{
+  margin:10px 10px 30px 10px;
+  color:#000;
+  font-size: 12px;
+  font-family: 'Input-Sans';
+  line-height: 20px;
+}
+h2{
+  margin:10px 10px 0 10px;
+}
+section.sidebar{
+
+}
+section.sidebar div.b{
+margin:20px;
+background:#EEEEEE;
+border:1px solid #A1A1A1;
+}
+section.sidebar div.b p{
+  margin:10px;
+  font-size: 14px;
+}
+section.sidebar div.b details{
+display: block;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+font-size: 14px;
+font-weight: 300;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+summary{
+list-style: none; 
+outline: none;
+}
+section.sidebar div.b details a{
+  display:block;
+  color:blue;
+  margin:5px 20px 0 20px;
+}
+section.sidebar div.b details summary::marker {
+            content: '';
+        }
+
+       section.sidebar div.b details summary::after {
+            content: '▼';
+            color:#B5B5B5;
+            margin-left: 10px;
+            transform: rotate(0deg);
+            transition: transform 0.2s;
+        }
+
+section.sidebar div.b details[open] summary::after {content: '▲';
+        }
+details a{
+  font-size: 12px;
+  text-decoration: none;
+}
+</style>
+<body>
+<header>
+  <h1>SixOhNine</h1>
+  <button onclick="menu()">☰</button>
+</header>
+<section class="x" id="x">
+  <button onclick="menu()">ᚷ</button>
+</section>
+<section class="sidebar">
+<div class="b">
+  <details>
+    <summary>
+      Sidebar
+    </summary>
+<a href="../../script/sidebar/militares.html">Militares</a>
+<a href="../../script/sidebar/instrucao.html">Instruções</a>
+<a href="../../script/sidebar/noticia.html">Notícias</a>
+<a href="section/ebfacil.html">Seções</a>
+  </details>
+</div>
+</section>
+<section class="a">
+<div class="sentence">
+
+<style>
+ div.table_a{
+    margin:0 10px 0 10px;
+    padding-bottom: 5px;
+    background:#eeeeee;
+      }
+  div.table{
+    margin:0 50px 0 10px;
+padding-bottom: 5px;
+background:#eeeeee;
+border:1px solid #A1A1A1;
+  }
+div.table_d{
+  margin:0 10px 0 50px;
+padding-bottom: 5px;
+background:#eeeeee;
+border:1px solid #A1A1A1;
+}
+  ul li{
+    color:#A1A1A1;
+  }
+  ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Input-Sans';
+  }
+  img {
+    margin:0px 10px 0 10px;
+  }
+
+  cite, h5, h4, h2, h3{
+    margin:10px;
+    font-family: 'Input-Sans';
+  }
+
+
+</style>
+<div class="table">
+<p>Tabela de conteúdo</p>
+
+<ul>
+<li><a href="#501">Expulsão de um Soldado Recruta no Exército Brasileiro</a></li>
+<li><a href="#502">As principais razões que podem levar à expulsão</a></li>
+<li><a href="#503">O processo de expulsão</a></li>
+<li><a href="#504">Comandante Soares expulsa Carvalho da B ADM GU SM</a></li>
+</ul>
+</div>
+<h2 id="501">Expulsão de um Soldado Recruta no Exército Brasileiro</h2>
+<p>
+A expulsão de um soldado recruta no Exército Brasileiro é uma medida disciplinar extrema, diferente do desligamento por conclusão do serviço militar ou por outras razões menos graves. Ela ocorre quando o militar comete faltas disciplinares consideradas gravíssimas ou crimes militares e comuns que o tornam incompatível com a permanência nas Forças Armadas.
+</p>
+<p id="502">
+As principais razões que podem levar à expulsão incluem:
+</p>
+<!-- 
+</p>
+<p>
+-->
+<ul type="none">
+<li><p>
+Crimes Militares: Como deserção, insubordinação, violência contra superior, furto de material bélico, entre outros.</p></li>
+<li><p>
+Crimes Comuns: Roubo, tráfico de drogas, homicídio, etc., mesmo que cometidos fora do expediente, podem levar à expulsão se a conduta for considerada desonrosa ou prejudicial à imagem da instituição.</p></li>
+<li><p>
+Faltas Disciplinares Graves: Reincidência em transgressões disciplinares de natureza grave, como o uso de entorpecentes, embriaguez em serviço, ou condutas que maculem a honra militar.</p></li>
+</ul>
+<p id="503">O processo de expulsão geralmente envolve:</p>
+<ul type="none">
+<li><p>
+Instauração de Processo Administrativo Disciplinar (PAD) ou Inquérito Policial Militar (IPM): Para apurar os fatos e garantir o direito à ampla defesa do militar.</p></li>
+<li><p>
+Julgamento: As provas são analisadas e, se a culpa for comprovada, a decisão de expulsão é tomada pela autoridade competente.
+</p></li>
+<li><p>
+Desligamento: O soldado é formalmente desligado do serviço ativo do Exército.</p></li>
+</ul>
+<p>
+A expulsão não é comum e se aplica apenas nos casos mais graves, quando a conduta do recruta compromete seriamente a disciplina, a hierarquia e os valores militares.
+</p>
+<div class="table_a">
+  <p><span style="font-size: 27px;">❝</span> <cite> Você não faz mais parte desta instituição, Carvalho!</cite></p>
+</div>
+
+</section>
+<section class="a">
+<div class="sentence">
+ <h2 id="504">Comandante Soares expulsa Carvalho da B ADM GU SM
+</h2>
+<div class="table_d">
+<center><h4>609 Carvalho</h4></center>
+<img width="95%" src="../../assets/img/sd/carvalho.jpg" alt="deceased teixeira">
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Conhecido por</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Guilherme de Abreu Carvalho</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Cidade Natal</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Ijuí, RS, Brasil</p>
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Nascimento</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">27 Janeiro 2005</p>
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Status</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Expulso</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Desligamento</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">11 Jul 2024</p>
+</div>
+</div>
+<center>
+<audio style="margin-top: 20px;" controls type="audio/opus"><source src="../../assets/audio/expulso.opus"></audio>
+</center>
+<p>
+Oresultado de uma sindicância surpreendeu o soldado Carvalho ao determinar um licenciamento a bem da disciplina. Essa decisão foi ratificada pelo comandante Soares, que decidiu pelo afastamento do militar em decorrência da violação de três normas estabelecidas no Regulamento Disciplinar do Exército. Com base nas conclusões da sindicância, foram impostas ao soldado Carvalho as seguintes transgressões disciplinares:
+</p>
+<p>
+09 - deixar de cumprir prescrições expressamente estabelecidas no Estatuto dos Militares ou em outras leis e regulamentos, desde que não haja tipificações como crime ou contravenção penal, o pundonor militar ou decoro da classe;
+</p>
+<p>
+40 - portar-se de maneira inconveniente ou sem compostura;
+</p>
+<p>
+83 - deixar de ter consigo documentos de identidade que o identifiquem;
+</p>
+<p>
+O desfecho da sindicância, que culminou no licenciamento do soldado Guilherme de Abreu Carvalho sob a justificativa a bem da disciplina , não apenas ilustra a rigidez do sistema militar, mas também expõe uma preocupante ausência de empatia e entendimento em relação às complexidades emocionais e psicológicas que marcam a vida de um jovem militar. Ao ratificar essa decisão, o comandante Soares parece ter desconsiderado que, por trás das transgressões disciplinares, existem seres humanos com suas vulnerabilidades, desafios e, em muitas ocasiões, crises pessoais profundas.
+</p>
+<p>
+Ao ratificar essa decisão, o comandante Soares demonstra uma preocupante falta de sensibilidade em relação à realidade emocional dos jovens militares sob seu comando. Sua postura rígida e impessoal ignora completamente a complexidade das circunstâncias que cercam as transgressões disciplinares. Ao optar pela punição em vez da compreensão, Soares falha em reconhecer que, por trás das infrações, existem indivíduos lidando com vulnerabilidades e crises pessoais. Essa abordagem punitiva não só perpetua um ambiente hostil, mas também reflete uma liderança incapaz de equilibrar a disciplina necessária com a compaixão que todos os soldados merecem.
+</p>
+<p>
+As infrações cometidas por Carvalho — não portar documentos de identificação, comportar-se de maneira inconveniente e deixar de cumprir prescrições — embora sérias, não justificam um afastamento tão drástico. Essas ações, resultantes de um momento de descontrole sob influência do álcool, deveriam ser tratadas como um sinal de que o jovem precisava de apoio e orientação, e não como um motivo para condená-lo à marginalização.
+</p>
+<p>
+A entrega de seus pertences ao subtenente Pires simboliza não apenas a perda de um título militar, mas também a destruição de inúmeras oportunidades futuras. O licenciamento à bem da disciplina não é apenas uma mancha no histórico militar de Carvalho; é um estigma que o acompanhará por toda a sua vida, limitando suas opções em termos de emprego, educação e cidadania. É inaceitável que, em um sistema que preza por valores como honra, lealdade e camaradagem, a resposta a um erro cometido por um jovem seja a exclusão severa e implacável, ao invés de uma abordagem que busque a reabilitação e o aprendizado.
+</p>
+<p>
+Em uma sociedade que clama por empatia e compreensão, a falta de sensibilidade em relação às dificuldades enfrentadas por muitos jovens soldados é uma crítica contundente à cultura militar que ainda persiste em tratar comportamentos indesejados com mão de ferro. O soldado Carvalho, ao final de seu percurso militar, não apenas perdeu sua posição nas fileiras do Exército, mas também a chance de se tornar um cidadão pleno, capaz de contribuir de maneira significativa para a sociedade, a confiança em si mesmo, o respeito de seus colegas e superiores, e a possibilidade de um futuro promissor dentro de uma carreira que poderia ter sido gratificante e enriquecedora. Além disso, ele viu desmoronar suas aspirações, sonhos e a construção de uma identidade sólida, ao mesmo tempo em que enfrentou o estigma social associado ao seu afastamento, que o marginaliza e o afasta ainda mais da reintegração à sociedade civil.
+</p>
+
+
+</div>
+<!--
+
+</p><p> 
+
+-->
+</div>
+</section>
+
+
+
+
+
+<script type="text/javascript" charset="utf-8">
+var x = document.getElementById('x');
+var y = false;
+
+function menu() {
+  y = !y;
+  x.style.display = y ?
+  'block' : 'none';
+}
+</script>
+</body>
+
+</html>
