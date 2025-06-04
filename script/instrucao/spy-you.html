@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Diário de 609 Carvalho</title>
+  <meta name="description" content="O Diário de Carvalho foi algo raríssimo criado em seu tempo de soldado."/>
+  <meta name="author" content="anonymous"/>
+  <meta name="copyright" content="Sd 609® Carvalho"/>
+  <meta name="keywords" content="Diário de um Soldado, Diário Pessoal, Revelações, Crítica, Aperfeiçoamento Militar, Soldado, Ruínas"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="icon" href="../../assets/img/icon.jpg">
+  <link rel="stylesheet" href="../../style.css" type="text/css" media="all" />
+</head>
+<style type="text/css" media="all">
+@font-face {
+  font-family: Regular;
+  src: url('../../assets/font/regular.ttf') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: Input-Sans;
+  src: url('../../assets/font/InputSansNarrow-Regular.ttf') format('woff2');
+  font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+  }
+  html, body{
+    margin:0;
+    background:#eeeeee;
+  }
+  header{
+    background:#FAFAFA;
+    padding:1px;
+    width:100%;
+    display:inline-flex;
+  }
+  header h1{
+    font-size: 32px;
+    color:#000;
+    cursor:pointer;
+    margin: 20px 0 20px 20px;
+    font-family: 'Input-Sans', sans-serif;
+  }
+  header button, section button{
+    cursor:pointer;
+    position:absolute;
+    right:25px;
+top:25px;
+border:none;
+background:none;
+color:#000;
+font-size: 24px;
+  }
+.x{
+background:red;
+position:fixed;
+right:0;left:0;bottom:0;top:0;
+display:none;
+overflow-y:auto;
+}
+section.page, section.page img{
+  margin:0 20px 0 20px;
+}
+section.page p{
+  font-size: 14px;
+  color:#fff;
+  padding:0px 20px 0px 20px;
+}
+section.page div.quote {
+  padding:20px 0 20px 0;
+  margin:0 20px 0 20px;
+  background:#0f0f0f;
+}
+section.a{
+  margin:30px 20px 0 20px;
+  
+}
+section.a div.sentence{
+  background:#fff;
+  padding:20px 0 20px 0;
+  
+}
+section.a div.sentence p{
+  margin:10px 10px 30px 10px;
+  color:#000;
+  font-size: 12px;
+  font-family: 'Input-Sans';
+  line-height: 20px;
+}
+h2{
+  margin:10px 10px 0 10px;
+}
+section.sidebar{
+
+}
+section.sidebar div.b{
+margin:20px;
+background:#EEEEEE;
+border:1px solid #A1A1A1;
+}
+section.sidebar div.b p{
+  margin:10px;
+  font-size: 14px;
+}
+section.sidebar div.b details{
+display: block;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+font-size: 14px;
+font-weight: 300;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+summary{
+list-style: none; 
+outline: none;
+}
+section.sidebar div.b details a{
+  display:block;
+  color:blue;
+  margin:5px 20px 0 20px;
+}
+section.sidebar div.b details summary::marker {
+            content: '';
+        }
+
+       section.sidebar div.b details summary::after {
+            content: '▼';
+            color:#B5B5B5;
+            margin-left: 10px;
+            transform: rotate(0deg);
+            transition: transform 0.2s;
+        }
+
+section.sidebar div.b details[open] summary::after {content: '▲';
+        }
+details a{
+  font-size: 12px;
+  text-decoration: none;
+}
+</style>
+<body>
+<header>
+  <h1 onclick="location.href='../../script/home.html'">SixOhNine</h1>
+  <button onclick="menu()">☰</button>
+</header>
+<section class="x" id="x">
+  <button onclick="menu()">ᚷ</button>
+</section>
+<section class="sidebar">
+<div class="b">
+  <details>
+    <summary>
+      Sidebar
+    </summary>
+<a href="../../script/sidebar/militares.html">Militares</a>
+<a href="../../script/sidebar/instrucao.html">Instruções</a>
+<a href="../../script/sidebar/noticia.html">Notícias</a>
+<a href="section/ebfacil.html">Seções</a>
+  </details>
+</div>
+</section>
+<section class="a">
+<div class="sentence">
+
+<style>
+ div.table_a{
+    margin:0 10px 0 10px;
+    padding-bottom: 5px;
+    background:#eeeeee;
+      }
+  div.table{
+    margin:0 10px 0 50px;
+padding-bottom: 5px;
+background:#eeeeee;
+border:1px solid #A1A1A1;
+  }
+div.table_c {
+  margin: 0 70px 0 10px;
+  padding-bottom: 5px;
+  background: #eeeeee;
+  border: 1px solid #A1A1A1;
+}
+  ul li{
+    color:#A1A1A1;
+  }
+  ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Input-Sans';
+  }
+  img {
+    margin:10px;
+  }
+
+  cite, h5, h4, h2{
+    margin:10px;
+    font-family: 'Input-Sans';
+  }
+
+
+</style>
+<img width="95%" src="../../assets/img/other/farda.jpeg" alt="farda">
+<p style="text-align: right;">- <cite>Gen. Octávio Costa</cite></p>
+<div class="table_c">
+<p>Tabela de conteúdo</p>
+
+<ul>
+<li><a href="#D5D">Duque de Caxias</a></li>
+<li><a href="#D6D">Principais Instituições Custodiadoras de Acervos Relevantes</a></li>
+<ul type="disc">
+<li><a href="#D7D">Arquivo Nacional (AN)</a></li>
+<li><a href="#D8D">Museu Histórico Nacional (MHN)</a></li>
+<li><a href="#D9D">Biblioteca Nacional (BN)</a></li>
+</ul>
+<li><a href="#D0E">Acervos com Relevância Indireta ou Desafios de Acesso Específico a Caxias</a></li>
+<ul type="disc">
+<li><a href="#D1E">Arquivo Histórico do Exército Brasileiro (AHEx)
+</a></li>
+<li><a href="#D2E">Instituto Histórico e Geográfico Brasileiro (IHGB)
+</a></li>
+<li><a href="#D3E">Outras Instituições com Documentação Militar Histórica (Breve Menção)</a></li>
+</ul>
+<li><a href="#D4E">Desafios na Pesquisa de Fontes Primárias de Duque de Caxias</a>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="a">
+<div class="sentence">
+<div class="table">
+<center><h2>Duque de Caxias</h2></center>
+<img width="95%" src="../../assets/img/other/duque.jpeg" alt="duque de caxias">
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Conhecido por</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Luís Alves de Lima e Silva</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+<p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Nascimento</p>
+<p style="font-size:16px;text-align:right;margin: 10px;">25 de agosto de 1803</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+<p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Morte</p>
+<p style="font-size:16px;text-align:right;margin: 10px;">7 de maio de 1880</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Pai</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Francisco de Lima e Silva</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Mãe</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Mariana Cândida de Oliveira Belo</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Cidade Natal</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Porto da Estrela (Magé)</p>
+</div>
+
+</div>
+<h4 id="D5D">Duque de Caxias</h4>
+<div class="table_a">
+<p><span style="font-size: 27px;">❝</span> <cite>Lembrai-vos que a poucos passos de vós está o inimigo de todos nós - o inimigo de nossa raça e de tradição. Não pode tardar que nos meçamos com os soldados de Oribes e Rosas; guardemos para então as nossas espadas e o nosso sangue. Abracemo-nos para marcharmos, não peito a peito, mas ombro a ombro, em defesa da Pátria, que é a nossa mãe comum.</cite></p>
+</div>
+<p>
+Luís Alves de Lima e Silva, o Duque de Caxias (1803-1880), é uma figura seminal na história do Brasil, amplamente reconhecido como o "Pacificador" e Patrono do Exército Brasileiro. Sua influência foi decisiva em momentos cruciais para a formação e consolidação do Estado nacional, desde sua participação nas lutas pela Independência até seu papel de comando na Guerra do Paraguai. Além disso, Caxias foi fundamental na repressão de diversas revoltas internas que ameaçaram a unidade territorial do Império, como a Balaiada, as Revoltas Liberais e a Revolução Farroupilha. A complexidade de sua trajetória militar e política o estabelece como um objeto de estudo indispensável para a compreensão do século XIX brasileiro.
+</p>
+<h4 id="D6D">Principais Instituições Custodiadoras de Acervos Relevantes
+</h4>
+<h5 id="D7D">Arquivo Nacional (AN)
+</h5>
+<p>O Arquivo Nacional (AN) emerge como uma das instituições mais cruciais para a pesquisa sobre a história brasileira, e em seu vasto acervo, detém uma coleção privada de Luís Alves de Lima e Silva, o Duque de Caxias. Esta "Coleção RT - Duque de Caxias" é caracterizada como um "pequeno fundo" que, apesar de seu tamanho, é rico em variedade documental. Inclui correspondências recebidas por Caxias que abordam desde temas da Guerra do Paraguai, alistamento militar e comandos, até assuntos de caráter pessoal. Um achado particularmente notável é a cópia do histórico escolar de Luís Alves de Lima e Silva, um tipo de documento raro para figuras históricas de seu período. No que tange à iconografia, o acervo é complementado por fotografias pintadas à mão do próprio Caxias e de membros de sua família, além de uma coleção de estereoscopias de Marc Ferrez, que retratam o interior da fazenda Santa Mônica. Embora o período exato dos documentos não seja explicitamente detalhado, a biografia de Caxias (1803-1880) sugere que os materiais se inserem predominantemente nesse intervalo.
+</p><p> 
+A importância da documentação privada para a biografia pública de Caxias não pode ser subestimada. Embora Caxias seja predominantemente conhecido por suas conquistas militares e políticas, a inclusão de "assuntos pessoais" e de seu "histórico escolar" em um arquivo nacional sublinha o reconhecimento da interconexão entre a vida privada de um indivíduo e seu impacto público. Esses documentos pessoais podem oferecer perspectivas cruciais sobre seu caráter, processos de tomada de decisão, redes pessoais e as experiências formativas que moldaram sua carreira militar. Eles contribuem para humanizar a figura histórica, permitindo que a narrativa transcenda uma abordagem puramente hagiográfica ou oficial, e abordem diretamente alguns dos "vazios documentais" mencionados em relação às fontes pessoais. Isso reflete uma tendência na historiografia moderna de buscar uma compreensão mais holística do indivíduo, além de seus papéis públicos, e demonstra o valor que os arquivos atribuem à coleta de detalhes pessoais, mesmo que aparentemente menores, para a construção de um registro histórico mais completo.
+</p><p> 
+Para a acessibilidade e consulta, o Arquivo Nacional oferece múltiplas vias. Documentos de acervos privados, como o de Caxias, são tipicamente recebidos por meio de doação. Para consultá-los, os usuários podem utilizar o Sistema de Informações do Arquivo Nacional (SIAN) ou outras bases de pesquisa disponíveis no portal do AN. O atendimento presencial para consulta de acervos ocorre em dias úteis, das 7h30min às 19h30min, com a entrada permitida até as 18h. O AN também disponibiliza guias de fontes e instrumentos de pesquisa online, que são recursos valiosos para auxiliar os pesquisadores em suas buscas.
+</p>
+<h5 id="D8D">Museu Histórico Nacional (MHN)
+</h5>
+<p>O Museu Histórico Nacional (MHN) constitui outro repositório fundamental para a pesquisa sobre Duque de Caxias, abrigando a "Coleção CX - Duque de Caxias". Este acervo arquivístico cobre um período significativo, de 1840 a 1959, e possui uma dimensão textual de 0,04 metros lineares, o que corresponde a 15 itens. A formação desta coleção específica é um exemplo de curadoria ativa: ela foi criada pela opção de agrupar documentos que não possuíam registros de entrada localizados no MHN, tendo como base o titular, Luís Alves de Lima e Silva, para evitar que ficassem desmembrados.
+</p><p> 
+O conteúdo da coleção é bastante revelador de aspectos tanto públicos quanto privados da vida de Caxias. Inclui cartas com instruções para viagens, uma carta para a esposa com notícias sobre uma revolução (provavelmente a Farroupilha), pedidos de apoio político para um candidato a deputado, o testamento de Duque de Caxias, e o inventário de seus bens. A coleção é organizada em quatro séries distintas: Correspondência, Homenagem, Miscelânia e Anexos. O estado de conservação do material é considerado bom, e a organização do acervo foi meticulosamente realizada por uma equipe de arquivistas entre 2009 e 2010.
+</p><p> 
+O papel dos museus na preservação de acervos arquivísticos e a curadoria ativa demonstrada pelo MHN são aspectos cruciais. O MHN, embora seja primariamente um museu, mantém uma coleção arquivística dedicada a Caxias. A abordagem proativa do MHN em criar uma coleção coerente em torno de Caxias, ao consolidar documentos díspares e previamente não catalogados, destaca um aspecto vital da prática arquivística moderna: a curadoria ativa e a organização intelectual. Em vez de simplesmente receber doações passivamente, o MHN identificou materiais dispersos relacionados a uma figura histórica chave e os unificou intencionalmente para melhorar a descoberta e a preservação. O fato de incluir uma "carta para a esposa com notícias sobre uma revolução"  enfatiza o valor desses documentos pessoais cuidadosamente selecionados para compreender grandes eventos históricos através da perspectiva privada de Caxias, complementando os registros oficiais. Isso reflete uma tendência mais ampla nas instituições culturais de integrar diferentes tipos de patrimônio (cultura material e arquivos textuais) e de construir ativamente coleções arquivísticas coerentes em torno de figuras históricas significativas, mesmo quando a proveniência inicial é incerta ou dispersa.
+</p><p> 
+Em relação às condições de acesso e reprodução, o acesso à Coleção CX é restrito e requer aviso prévio para consulta. A reprodução dos documentos é regulamentada por uma política institucional, a Resolução Normativa IBRAM nº 15/2022. Para auxiliar os pesquisadores, existe um inventário disponível para a coleção, e um instrumento de pesquisa em formato PDF, denominado "duque-de-caxias.pdf", pode ser baixado, facilitando a preparação para a consulta.
+</p>
+<h5 id="D9D">Biblioteca Nacional (BN)
+</h5>
+<p>A Biblioteca Nacional (BN), embora não possua um "fundo" ou "coleção" arquivística de Duque de Caxias no mesmo sentido do Arquivo Nacional ou do Museu Histórico Nacional, oferece capacidades de busca notáveis em seu vasto acervo digital que são de grande valia para a pesquisa sobre Caxias. Seu portal BNDigital disponibiliza ferramentas robustas para a busca de documentos relacionados a "Duque de Caxias". Os usuários podem optar por uma "Busca rápida" ou uma "Busca avançada", utilizando filtros detalhados como "Título", "Autor", "Assunto", "Ano edição", e até mesmo uma "Coleção" específica listada como "Caxias".
+</p><p> 
+A digitalização como facilitador da pesquisa histórica e a importância da "coleção virtual" são evidentes na abordagem da BN. A BN, ao disponibilizar um vasto acervo digital com avançadas capacidades de busca e um filtro específico para "Caxias", ilustra o conceito de uma "coleção virtual". Embora não seja um arquivo fisicamente unificado, a plataforma digital permite que os pesquisadores agreguem virtualmente materiais díspares relacionados a Caxias, abrangendo diferentes formatos e coleções originais. Isso minimiza significativamente as barreiras logísticas de deslocamento físico e acesso a múltiplas instituições, democratizando a pesquisa histórica. A capacidade de pesquisar por "Assunto" e filtrar por "Coleção: Caxias" indica um trabalho substancial de metadados para vincular itens relevantes, mesmo que provenientes de diferentes fundos físicos, o que é crucial para superar a natureza "dispersa" dos registros de Caxias. Isso demonstra o impacto transformador das humanidades digitais e dos projetos de digitalização de arquivos, que alteram o paradigma do acesso físico para a descoberta virtual, possibilitando novas formas de pesquisa antes limitadas por restrições geográficas e logísticas.
+</p><p> 
+A BN digitaliza e disponibiliza uma ampla gama de tipos de materiais que podem conter referências a Caxias, incluindo material cartográfico, desenhos, documentos fotográficos, livros, manuscritos, partituras, periódicos e materiais sonoros e de vídeo. É possível refinar a busca por "Tipo de material" (por exemplo, "Artigo de Periódico", "Fotografia", "Mapa") e "Idioma". A BN ressalta que apenas documentos em domínio público ou com autorização do detentor dos direitos autorais são disponibilizados digitalmente. O portal também oferece orientações de uso, uma seção de perguntas e respostas e informações de contato para assistência aos usuários.
+</p>
+<style>
+table{
+  width:100%;
+}
+table thead td, table tbody td{
+background: #FAFAFA;
+width: auto;
+border:1px solid #000;
+font-size: 12px;
+padding:10px;
+hyphens: auto;
+font-family: 'Input-Sans';
+}
+summary.sum_a{
+  margin:10px;
+  font-size: 14px;
+  font-family: 'Input-Sans';
+}
+</style>
+
+<details>
+<summary class="sum_a">
+  Ver Tabela ▼
+</summary>
+<table>
+  <thead>
+    <tr>
+      <td>Instituição</td>
+      <td>Nome do Fundo</td>
+      <td>Período</td>
+      <td>Tipo de Documento</td>
+      <td>Relevância a Caxias</td>
+      <td>Condições de Acesso</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arquivo Nacional (AN)</td>
+      <td>Coleção RT - Duque de Caxias </td>
+      <td>1803-1880 (vida de Caxias) </td>
+      <td>Correspondências (Guerra do Paraguai, alistamento, comandos, pessoais), histórico escolar, fotografias pintadas à mão, estereoscopias.</td>
+      <td>Documentos pessoais e oficiais que humanizam a figura e complementam registros públicos.</td>
+      <td>SIAN, presencial (dias úteis, 7h30-19h30, entrada até 18h). Guias e instrumentos de pesquisa online.</td>
+    </tr>
+    <tr>
+      <td>Museu Histórico Nacional (MHN)</td>
+      <td>Coleção CX - Duque de Caxias </td>
+      <td>1840-1959</td>
+      <td>Cartas (viagens, revolução Farroupilha, política), testamento, inventário de bens.</td>
+      <td>Acervo arquivístico curado, com documentos pessoais e oficiais agrupados para evitar desmembramento.</td>
+      <td>Acesso restrito, requer aviso prévio. Reprodução regulamentada (Resolução Normativa IBRAM nº 15/2022). Inventário disponível, instrumento de pesquisa PDF.</td>
+    </tr>
+    <tr>
+      <td>Biblioteca Nacional (BN)</td>
+      <td>Acervo Digital (com filtro "Caxias")</td>
+      <td>Século XIX (principalmente)</td>
+      <td>Material cartográfico, desenhos, documentos fotográficos, livros, manuscritos, partituras, periódicos, áudio, vídeo.</td>
+      <td>Amplo acervo digital que permite a descoberta de referências a Caxias em diversas fontes secundárias e primárias digitalizadas. </td>
+      <td>Busca digital no portal BNDigital (rápida/avançada). Documentos em domínio público ou com autorização.</td>
+    </tr>
+    
+    <tr>
+      <td>Arquivo Histórico do Exército Brasileiro (AHEx)</td>
+      <td>(Não especificado nos materiais)</td>
+      <td>(Não especificado nos materiais)</td>
+      <td>Prováveis documentos militares oficiais, relatórios de campanha, ordens, registros administrativos.</td>
+      <td>Instituição central para a história militar, provável detentora de vasto material contextual sobre a carreira militar de Caxias. </td>
+      <td>Informações específicas limitadas online. Contato direto recomendado (Tel: 55 21 2519-5189) e pesquisa aprofundada no local.</td>
+    </tr>
+    <tr>
+      <td>Instituto Histórico e Geográfico Brasileiro (IHGB)</td>
+      <td>(Não especificado nos materiais)</td>
+      <td>(Não especificado nos materiais)</td>
+      <td>Livros, catálogos, publicações, possível documentação geral sobre o Império e eventos do período.</td>
+      <td>Instituição de pesquisa histórica de longa data, provável detentora de estudos e fontes secundárias sobre Caxias e seu tempo.</td>
+      <td>Informações específicas limitadas online. Contato direto recomendado (Email: info@ihgb.org.br) e consulta a coleções físicas.</td>
+    </tr>
+  </tbody>
+</table>
+</details>
+
+<h4 id="D0E">Acervos com Relevância Indireta ou Desafios de Acesso Específico a Caxias
+</h4>
+<h5 id="D1E">Arquivo Histórico do Exército Brasileiro (AHEx)
+</h5>
+<p>O Arquivo Histórico do Exército Brasileiro (AHEx) seria, intuitivamente, a instituição mais direta para abrigar documentos de seu patrono. Contudo, os materiais de pesquisa consultados não fornecem informações detalhadas sobre um acervo específico de Duque de Caxias. Uma tentativa de busca por "Arquivo Histórico do Exército" resultou em uma página de erro ou URL incorreta em um dos recursos. Outros materiais mencionam o AHEx ou seu site , inclusive apontando para normas e procedimentos , mas sem especificar coleções dedicadas a Caxias. Informações sobre catálogos de fundos documentais ou acervos de Caxias permanecem ausentes nos dados disponíveis.
+</p><p> 
+A lacuna de informação pública sobre o AHEx, no que diz respeito a um fundo específico de Duque de Caxias, reflete desafios arquivísticos e a necessidade de pesquisa proativa. A ausência de informações explícitas sobre uma coleção dedicada a Caxias nas descrições publicamente acessíveis do AHEx (pelo menos nos materiais fornecidos) pode indicar várias situações. Pode ser que a informação não esteja digitalizada ou facilmente acessível online, ou que os registros militares de Caxias estejam integrados em fundos mais amplos de operações ou comandos militares, exigindo uma compreensão mais profunda da classificação arquivística militar. Esta situação contrasta com as descrições detalhadas fornecidas pelo Arquivo Nacional e pelo Museu Histórico Nacional, que explicitamente nomeiam coleções de "Duque de Caxias". Isso sugere que, embora o AHEx deva, por sua natureza, possuir um vasto volume de material relacionado à carreira militar de Caxias, acessá-lo pode exigir uma pesquisa arquivística mais aprofundada e presencial, navegando por catálogos institucionais mais amplos e, possivelmente, interagindo diretamente com os arquivistas para identificar as séries relevantes. Isso destaca um desafio comum na pesquisa arquivística: a ausência de catálogos online facilmente descobertos para indivíduos específicos não significa necessariamente a ausência de documentos relevantes. Pelo contrário, sublinha a necessidade de os pesquisadores adotarem uma abordagem investigativa e proativa, indo além de simples buscas por palavras-chave para compreender a estrutura organizacional dos arquivos militares e seus sistemas de classificação.
+</p><p> 
+Dada a ausência de informações explícitas nos materiais de pesquisa sobre um fundo dedicado a Caxias no AHEx, é fundamental que pesquisadores interessados entrem em contato direto com a instituição (o telefone 55 21 2519-5189 é fornecido em alguns materiais ) ou consultem seu site oficial (como indicado em
+<a style="word-break: break-all;" href="https://www.ahex.eb.mil.br/">https://www.ahex.eb.mil.br/</a>) para verificar a existência de catálogos internos, instrumentos de pesquisa ou fundos documentais que possam conter correspondências, relatórios ou outros registros de Duque de Caxias. É provável que documentos relacionados a Caxias estejam dispersos em fundos maiores de campanhas militares, ministérios ou comandos militares, em vez de uma coleção pessoal dedicada.
+</p>
+<h5 id="D2E">Instituto Histórico e Geográfico Brasileiro (IHGB)
+</h5>
+<p>
+O Instituto Histórico e Geográfico Brasileiro (IHGB) é uma das mais antigas e prestigiadas instituições de pesquisa histórica no Brasil. Seu portal oferece uma seção de "Livros e Catálogos" , indicando um programa editorial ativo com publicações impressas e e-books, incluindo catálogos de obras raras. O IHGB possui seções de "Arquivo", "Biblioteca" e "Museu" , o que sugere a existência de um vasto acervo. Alguns materiais mencionam a relevância do IHGB para eventos como a Revolução Farroupilha , um período-chave na carreira de Caxias.
+</p><p>
+Apesar de sua importância histórica, os materiais de pesquisa fornecidos não detalham a existência de um catálogo online ou acervo digital específico para documentos de Duque de Caxias. Um dos materiais resultou em uma mensagem de "Blocked Web Page or Access Failure" do Arquivo Nacional ao tentar acessar informações sobre o IHGB. Outro material afirma explicitamente que não especifica se a coleção do IHGB é digitalizada ou acessível online, nem se contém documentos de Caxias, embora mencione a seção de "Livros e Catálogos".
+</p><p>
+A importância da presença online e a "visibilidade arquivística" são aspectos cruciais que se destacam aqui. O contraste entre a proeminência histórica do IHGB e a aparente falta de informações detalhadas e facilmente acessíveis online sobre coleções específicas, como as de Caxias, ressalta o desafio da "visibilidade arquivística". Mesmo que uma instituição possua materiais significativos, sua utilidade para os pesquisadores é severamente limitada se não estiverem adequadamente catalogados, digitalizados ou acessíveis por meio de plataformas online robustas. Isso afeta a eficiência da pesquisa e pode levar à subutilização de valiosos recursos históricos. As mensagens de erro encontradas  acentuam essa questão, indicando que até mesmo consultas gerais sobre seus catálogos podem ser problemáticas. Essa situação enfatiza a necessidade contínua de as instituições históricas, especialmente aquelas com vastas e inestimáveis coleções, investirem em infraestrutura digital robusta e em catalogação online abrangente. Na era digital, a máxima "se não está online, não existe" é uma realidade, infelizmente, cada vez mais prevalente para muitos pesquisadores, tornando a acessibilidade digital um fator crítico para a relevância e o impacto de um arquivo.
+</p><p>
+Para obter informações detalhadas sobre o acervo do IHGB, especialmente sobre documentos de Duque de Caxias, é necessário consultar diretamente o site do IHGB (o e-mail info@ihgb.org.br é fornecido em ) ou entrar em contato com a instituição. Pesquisadores devem explorar as funcionalidades de busca do portal e as seções de "Arquivo" e "Biblioteca" para verificar a disponibilidade de catálogos online ou informações sobre acervo digital. É provável que o IHGB possua documentos e estudos secundários valiosos sobre Caxias, dada sua missão de preservar a memória histórica brasileira, mas a acessibilidade digital de fontes primárias pode ser limitada.
+</p>
+<h5 id="D3E">Outras Instituições com Documentação Militar Histórica (Breve Menção)
+</h5>
+<p>Além das instituições que possuem coleções diretamente ligadas a Duque de Caxias, existem outros acervos que, embora não contenham fundos específicos do Patrono, são indispensáveis para contextualizar sua atuação e o cenário militar e político do século XIX brasileiro. A pesquisa contextual e a rede de informações arquivísticas são fundamentais para uma compreensão completa. Uma análise abrangente da figura de Caxias não pode se restringir aos seus papéis pessoais; ela deve integrar informações sobre a estrutura do exército, regulamentos militares, condições sociais das tropas, debates políticos e avanços tecnológicos da época. Essas fontes "indiretas" fornecem o pano de fundo necessário para interpretar as ações e decisões diretas de Caxias, permitindo que os pesquisadores o insiram na tapeçaria histórica mais ampla. Isso reforça a ideia de que a pesquisa histórica frequentemente se baseia em uma rede de fontes interconectadas, e não em uma busca linear por um único arquivo perfeito.
+</p>
+<ul>
+<li><p>Arquivo Nacional (geral): Além da coleção privada específica de Caxias, o Arquivo Nacional, como instituição central de guarda de documentos governamentais, possui vastos fundos que, embora não diretamente "de Caxias", contêm informações cruciais sobre o período em que ele atuou. Isso inclui registros militares gerais, correspondências de ministérios, documentos legislativos e outros que contextualizam as campanhas e o cenário político-militar do século XIX.
+</p></li>
+<li><p>Museu Histórico Nacional (geral): De forma similar, o MHN possui coleções mais amplas de história militar brasileira, como capacetes da Imperial Guarda de Honra, espadas, figurinos militares do final do século XVIII e canhões. Esses itens ajudam a visualizar o contexto material e simbólico da época de Caxias. O papel do museu na organização de suas coleções para serem "digna do passado brasileiro" sublinha sua missão histórica mais ampla.
+</p></li>
+<li><p>Biblioteca Nacional (geral): A Biblioteca Nacional, para além de seu acervo digital com o filtro "Caxias", guarda manuscritos e álbuns de figurinos militares do século XIX. Esses materiais podem fornecer contexto visual e textual vital sobre os uniformes, regulamentos militares e a cultura do Exército Brasileiro durante os anos de atuação de Caxias.
+</p></li>
+<li><p>Arquivo Público de Belo Horizonte: Documentos deste arquivo, por exemplo, indicam detalhes específicos sobre os uniformes da 1ª e 2ª Companhias dos Dragões Reais das Minas. Tais informações oferecem perspectivas granulares sobre a organização e a aparência das tropas do período, essenciais para compreender o exército que Caxias comandou.
+</p></li>
+<li><p>Anuais do Arquivo Público e Torre do Tombo: Estes documentos, juntamente com as coleções do Museu Histórico, fornecem informações sobre milícias, ordenanças e vários corpos militares coloniais e imperiais. Essa informação detalhada é fundamental para entender a evolução do Exército Brasileiro e seus predecessores antes e durante as significativas contribuições de Caxias, proporcionando uma compreensão fundamental do panorama institucional.
+</p></li>
+</ul>
+<h4 id="D4E">Desafios na Pesquisa de Fontes Primárias de Duque de Caxias
+</h4>
+<p>A pesquisa sobre Duque de Caxias é caracterizada por um desequilíbrio notável nas fontes primárias disponíveis. Conforme apontado em um dos materiais de pesquisa, existe uma "vasta coleção de documentos" produzidos por Caxias em suas funções militares e políticas, o que se traduz em um grande volume de registros oficiais, como relatórios de campanha, ordens e correspondências administrativas. No entanto, documentos de caráter pessoal são descritos como "escassos e dispersos" por diversas instituições, e não existe um "arquivo Duque de Caxias" centralizado, como uma coleção doada por sua família. Essa ausência de um acervo pessoal coeso limita a capacidade do historiador de encontrar informações sobre os aspectos mais íntimos de sua vida, suas emoções, suas redes informais e as influências que moldaram o jovem Luís Alves de Lima e Silva antes de sua ascensão.
+</p><p>
+O impacto da disponibilidade arquivística na construção da narrativa histórica é profundo. Essa realidade arquivística molda diretamente a produção historiográfica e a percepção pública de Caxias. Se os documentos oficiais são abundantes, as narrativas naturalmente se inclinarão a apresentar Caxias como um estrategista militar, uma figura política, o "Duque de Ferro", enfatizando suas conquistas e decisões públicas. Se os documentos pessoais são escassos, torna-se significativamente mais difícil explorar sua vida emocional, dinâmicas familiares, crenças pessoais ou as redes informais e pensamentos privados que poderiam ter influenciado suas ações públicas. Isso não é apenas um desafio metodológico para o historiador; é uma restrição ao próprio conhecimento histórico, podendo levar a uma compreensão mais monolítica ou menos matizada de uma figura histórica complexa, perpetuando certas narrativas (por exemplo, a do herói estoico e imaculado) simplesmente porque evidências contraditórias ou humanizadoras são mais difíceis de encontrar ou interpretar.
+</p><p>
+A predominância de fontes oficiais implica que muitas biografias e estudos sobre Caxias tendem a se concentrar em suas ações públicas e militares, correndo o risco de negligenciar a dimensão pessoal e as nuances de sua personalidade e motivações. Para contornar esses "vazios documentais", pesquisadores precisam explorar "possibilidades históricas" e realizar "pesquisa empírica meticulosa em fontes indiretas", inspirando-se em abordagens como a de Natalie Davis. Essa abordagem exige uma metodologia mais complexa, que pode envolver a análise de correspondências de terceiros, registros administrativos ou mesmo a interpretação de silêncios documentais, tornando a tarefa do biógrafo mais desafiadora e interpretativa, e por vezes, mais especulativa. Isso sublinha o papel crítico dos arquivos não apenas como repositórios de fatos, mas como modeladores ativos das narrativas históricas. Também destaca a responsabilidade ética dos historiadores de reconhecer as limitações arquivísticas e de serem transparentes sobre a base probatória de suas interpretações, especialmente ao lidar com figuras cujas vidas pessoais são pouco documentadas. Além disso, sugere que futuros esforços arquivísticos poderiam priorizar a identificação e consolidação desses registros pessoais dispersos.
+</p>
+
+  <!--
+</p><p> 
+-->
+</div>
+</section>
+
+
+
+
+<script type="text/javascript" charset="utf-8">
+var x = document.getElementById('x');
+var y = false;
+
+function menu() {
+  y = !y;
+  x.style.display = y ?
+  'block' : 'none';
+}
+</script>
+</body>
+
+</html>
