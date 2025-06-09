@@ -200,6 +200,10 @@ border:1px solid #A1A1A1;
   section.a div.sentence a{
    word-break:break-all;
   }
+  section.a div.sentence div.letra p{
+    font-style: italic;
+    text-align: center;
+  }
 
 
 </style>
@@ -208,8 +212,8 @@ border:1px solid #A1A1A1;
 
 <ul>
 <li><a href="#CAA">Canções</a></li>
-<li><a href="#CAB">Canção do Exército</a></li>
-<li><a href="#CAC">Desmontagem do ferrolho e seu impulsor</a></li>
+<li><a href="#CAB">Fibra de Herói</a></li>
+<li><a href="#CAC">Canção do Exército</a></li>
 <li><a href="#CAD">Retirar o pino do percussor</a></li>
 <li><a href="#CAE">Retirada do percussor e mola do percussor</a></li>
 <li><a href="#FA5">Desmontagem do obturador do cilindro de gás</a></li>
@@ -225,12 +229,12 @@ border:1px solid #A1A1A1;
 </section>
 <section class="a">
 <div class="sentence">
- <h2 id="FA0">Canções
+ <h2 id="CAA">Canções
 </h2>
-<p>Aqui está uma lista completa de canções e hinos para decorar antes ou durante o seu ano de recruta.
+<p>Aqui está uma lista completa de canções e hinos para decorar antes ou durante ou depois do seu ano de recruta.
 </p>
 <p>Canal: <a href="https://youtube.com/@bandamilitarbatalhao">https://youtube.com/@bandamilitarbatalhao</a></p>
-<h3>Fibra de Herói:</h3>
+<h3 id="CAB">Fibra de Herói:</h3>
 <p>A composição foi escrita em 1942 por Teófilo de Barros Filho, para inspirar o patriotismo brasileiro após os sucessivos ataques da Alemanha Nazista a embarcações civis do Brasil, o que resultou na entrada do Brasil na Segunda Guerra Mundial.</p>
 <center>
 <audio controls type="audio/mp3">
@@ -239,7 +243,7 @@ border:1px solid #A1A1A1;
 </center>
 <p>Letra:</p>
 <p>
-<center>
+<div class="letra">
 <p> 
 Se a Pátria querida
 </p><p> 
@@ -325,14 +329,83 @@ Bandeira idolatrada</p><p>
 Altiva a tremular</p><p> 
 Onde a liberdade é mais uma estrela a brilhar
 </p>
-
-</center>
+</div>
 <p>Versão original cantada por Sílvio Caldas:</p>
 <center>
   <audio controls type="audio/mp3">
     <source src="../../assets/audio/fibra-de-heroi-original.mp3">
   </audio>
 </center>
+<h3 id="CAC">
+Cançāo do Exército
+</h3>
+<p>
+A música tem autoria de <strong><i>Teófilo Dolor Monteiro de Magalhães</i></strong> (1885 – 1968) Músico paraense. Compositor, pianista e flautista. <br>
+LETRA: Ten Cel <strong><i>ALBERTO AUGUSTO MARTINS</i></strong> (1894 - 1971) Tenente-Coronel do Serviço de Intendência do Exército. Obra originalmente intitulada “<i>Canção do Soldado</i>”, até ser adotada oficialmente pelo Exército Brasileiro com o título de “<i>Canção do Exército</i>”, conforme a Portaria Ministerial nº 88, de 20 de janeiro de 1976. Sua melodia é baseada totalmente no Dobrado “<i>Capitão Cassulo</i>”, composição de 1911, autoria do músico Teófilo Dolor Monteiro de Magalhães. Sua letra composta pelo poema do Ten Cel Alberto Augusto Martins, redigido em 1916.</p>
+<center>
+  <audio controls type="audio/mp3">
+    <source src="../../assets/audio/cancao-do-exercito.mp3">
+  </audio>
+</center>
+<p>Letra:</p>
+<div class="letra">
+<p>
+Nós somos da Pátria a guarda,</p><p>
+Fiéis soldados,</p><p>
+Por ela amados.</p><p>
+Nas cores de nossa farda</p><p>
+Rebrilha a glória,</p><p>
+Fulge a vitória.</p><p>
+
+Em nosso valor se encerra</p><p>
+Toda a esperança</p><p>
+Que um povo alcança.</p><p>
+Quando altiva for a Terra</p><p>
+Rebrilha a glória,</p><p>
+Fulge a vitória.</p><p>
+
+A paz queremos com fervor,</p><p>
+A guerra só nos causa dor.</p><p>
+Porém, se a Pátria amada</p><p>
+For um dia ultrajada</p><p>
+Lutaremos sem temor.</p><p>
+
+Como é sublime</p><p>
+Saber amar,</p><p>
+Com a alma adorar</p><p>
+A terra onde se nasce!</p><p>
+Amor febril</p><p>
+Pelo Brasil</p><p>
+No coração</p><p>
+Nosso que passe.</p><p>
+
+E quando a nação querida,</p><p>
+Frente ao inimigo,</p><p>
+Correr perigo,</p><p>
+Se dermos por ela a vida</p><p>
+Rebrilha a glória,</p><p>
+Fulge a vitória.</p><p>
+
+Assim ao Brasil faremos</p><p>
+Oferta igual</p><p>
+De amor filial.</p><p>
+E a ti, Pátria, salvaremos!</p><p>
+Rebrilha a glória,</p><p>
+Fulge a vitória.</p><p>
+
+A paz queremos com fervor,</p><p>
+A guerra só nos causa dor.</p><p>
+Porém, se a Pátria amada</p><p>
+For um dia ultrajada</p><p>
+Lutaremos sem temor.</p><p>
+A paz queremos com fervor,</p><p>
+A guerra só nos causa dor.</p><p>
+Porém, se a Pátria amada</p><p>
+For um dia ultrajada</p><p>
+Lutaremos sem temor.
+</p>
+
+</div>
 </div>
 <!--
 
@@ -352,9 +425,20 @@ var y = false;
 
 function menu() {
   y = !y;
-  x.style.display = y ?
-  'block' : 'none';
+  x.style.display = y ? 'block' : 'none';
 }
+
+const audioElements = document.querySelectorAll('audio');
+
+audioElements.forEach(audio => {
+audio.addEventListener('play', () => {
+audioElements.forEach(otherAudio => {
+if (otherAudio !== audio) {
+otherAudio.pause(); 
+}
+});
+});
+});
 </script>
 </body>
 
