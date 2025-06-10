@@ -146,7 +146,7 @@ details a{
 }
 </style>
 <body>
-<header>
+<header id="TOP">
   <h1 onclick="location.href='../../script/home.html'">SixOhNine</h1>
   <button onclick="menu()">☰</button>
 </header>
@@ -204,9 +204,22 @@ border:1px solid #A1A1A1;
     font-style: italic;
     text-align: center;
   }
-
+  
+section.a div.sentence div.top-scroll a{
+ width: 65px;
+ border-radius: 50%;
+ top:90%;left:83%;right:5%; bottom:2%;
+ position:fixed;
+  background:none;
+}
+section.a div.sentence div.top-scroll a img{
+  text-decoration: none;
+}
 
 </style>
+<div class="top-scroll">
+   <a href="#TOP"><img style="border-radius: 50%;" width="65px" src="../../assets/img/other/back-to-top.png" alt="backToTop"></a>
+</div>
 <div class="table">
 <p>Tabela de conteúdo</p>
 
