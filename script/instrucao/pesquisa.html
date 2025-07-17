@@ -196,11 +196,11 @@ border:1px solid #A1A1A1;
 <p>Tabela de conteúdo</p>
 
 <ul>
-<li><a href="#imagem">Pesquisar uma Imagem</a></li>
+<li><a href="#imagem">Pesquisar Imagem</a></li>
 <li><a href="#video">Pesquisar um Vídeo</a></li>
 <li><a href="#local">Pesquisar por Locais</a></li>
 <li><a href="#noticia">Pesquisar alguma notícia</a></li>
-<li><a href="#foruns">Pesquisar por Fóruns</a></li>
+<li><a href="#forum">Pesquisar por Fóruns</a></li>
 <li><a href="#coisas_legais">Procurar por coisas legais para fazer</a></li>
 <li><a href="#vagas">Pesquisar por Vagas de Emprego</a></li>
 <li><a href="#todos">Pesquisar por Todos</a></li>
@@ -308,7 +308,6 @@ section.save {
 
 <section class="a">
 <div class="sentence"><h2 style="margin-top: 30px;" id="video">Pesquise por Vídeos</h2>
-<center><img width="95%" src="../../assets/img/other/parametro-video.jpg" alt="video"></center>
 <p>
 Ao empregar este parâmetro, a busca se volta de maneira exclusiva para o fascinante universo dos conteúdos em vídeo. 
 Assim, o usuário se depara com uma lista rica e variada de vídeos pertinentes, provenientes tanto do YouTube quanto de outras plataformas de streaming igualmente renomadas. Este procedimento assemelha-se ao ato de clicar na aba designada como "Vídeos", proporcionando uma experiência de pesquisa que se revela não apenas mais focada, mas também mais eficiente. 
@@ -334,7 +333,7 @@ e ? (e = "https://www.google.com/search?q=" + encodeURIComponent(e) + "&udm=1", 
       Pesquise por Notícias
     </h2>
 <p>
-Ao utilizar o parâmetro &udm=12, a pesquisa é filtrada para incluir exclusivamente artigos de notícias e publicações de respeitáveis fontes jornalísticas. Essa ação é semelhante a clicar na aba "Notícias" do Google, permitindo ao usuário acessar conteúdos informativos relevantes e atualizados. Assim, a busca se concentra em reportagens e análises jornalísticas, oferecendo uma experiência de pesquisa focada e eficaz sobre os assuntos de interesse.
+parâmetro &udm=12
 </p>
     <section class="save"><input id="urlInput_noticia" placeholder="Pesquise por notícias..." /> <button class="btn-img" onclick="searchNews()">Procurar</button></section>
     <script>
@@ -348,64 +347,58 @@ Ao utilizar o parâmetro &udm=12, a pesquisa é filtrada para incluir exclusivam
 
 <section class="a">
   <div class="sentence">
-    <h2 id="local" style="margin-top: 30px;" id="video">
+    <h2 id="forum" style="margin-top: 30px;">
       Pesquise por Fóruns
     </h2>
     <section class="save"><input id="urlInput_forum" placeholder="Pesquise por fóruns..." /> <button class="btn-img" onclick="searchForum()">Procurar</button></section>
     <script>
-      function searchForum() {
-        var e = document.getElementById("urlInput_forum").value;
-        e ? (e = "https://www.google.com/search?q=" + encodeURIComponent(e) + "&udm=18", window.open(e, "_blank")) : alert("Por favor, insira uma URL válida.")
-      }
-    </script>
-  </div>
+function searchForum() {
+var e = document.getElementById("urlInput_forum").value;
+e ? (e = "https://www.google.com/search?q=" + encodeURIComponent(e) + "&udm=18", window.open(e, "_blank")) : alert("Por favor, insira uma URL válida.")
+}
+</script>
+</div>
 </section>
 
 <section class="a">
-  <div class="sentence">
-    <h2 id="local" style="margin-top: 30px;" id="video">
-      Pesquise por Coisas Legais para Fazer
-    </h2>
-    <section class="save"><input id="urlInput_legais" placeholder="Pesquise por coisas legais para..." /> <button class="btn-img" onclick="searchLegais()">Procurar</button></section>
+<div class="sentence">
+<h2 id="coisas_legais" style="margin-top: 30px;">
+Pesquise por Coisas Legais para Fazer
+</h2>
+<section class="save"><input id="urlInput_legais" placeholder="Pesquise por coisas legais para..." />
+<button class="btn-img" onclick="searchLegais()">Procurar</button></section>
 <script>
 function searchLegais() {
 var e = document.getElementById("urlInput_legais").value;
 e ? (e = "https://www.google.com/search?q=" + encodeURIComponent(e) + "&udm=15", window.open(e, "_blank")) : alert("Por favor, insira uma URL válida.")}
 </script></div></section>
-
 <section class="a">
 <div class="sentence">
-<h2 id="local" style="margin-top: 30px;" id="video">
+<h2 id="local" style="margin-top: 30px;">
 Pesquise por Vagas de Emprego</h2>
-<section class="save"><input id="urlInput_vagas" placeholder="Pesquise por vagas..." /> <button class="btn-img" onclick="searchVagas()">Procurar</button></section>
+<section class="save"><input id="urlInput_vagas" placeholder="Pesquise por vagas..." />
+<button class="btn-img" onclick="searchVagas()">Procurar</button></section>
 <script>
 function searchVagas() {
 var e = document.getElementById("urlInput_vagas").value;
 e ? (e = "https://www.google.com/search?q=" + encodeURIComponent(e) + "&udm=8", window.open(e, "_blank")) : alert("Por favor, insira uma URL válida.")}
 </script></div></section>
-
 <section class="a">
 <div class="sentence">
-<h2 id="todos" style="margin-top: 30px;" id="video">
+<h2 id="todos" style="margin-top: 30px;">
 Pesquise por Todos</h2>
-<center>
-<img width="95%" src="../../assets/img/other/parametro-todos.jpg" alt="todos">
-</center>
 <p>Este parâmetro representa a pesquisa abrangente ou "todos" os resultados. Ele não aplica um filtro específico, mostrando uma variedade de conteúdos da web.</p>
-<section class="save"><input id="urlInput_todos" placeholder="Pesquise por todos..." /> <button class="btn-img" onclick="searchTodos()">Procurar</button></section>
+<section class="save"><input id="urlInput_todos" placeholder="Pesquise por todos..." />
+<button class="btn-img" onclick="searchTodos()">Procurar</button></section>
 <script>
 function searchTodos() {
 var e = document.getElementById("urlInput_todos").value;
 e ? (e = "https://www.google.com/search?q=" + encodeURIComponent(e) + "&udm=16", window.open(e, "_blank")) : alert("Por favor, insira uma URL válida.")}
 </script></div></section>
-
 <section class="a">
 <div class="sentence">
-<h2 id="web" style="margin-top: 30px;" id="video">
+<h2 id="web" style="margin-top: 30px;">
 Pesquise na WEB</h2>
-<center>
-  <img width="95%" src="../../assets/img/other/parametro-web.jpg" alt="web">
-</center>
 <p>Web é uma palavra inglesa que significa teia ou rede. O significado de web ganhou outro sentido com o aparecimento da internet. A web passou a designar a rede que conecta computadores por todo mundo, a <strong>World Wide Web</strong> (<strong>WWW</strong>).</p>
 <p>A Web foi criada em <strong>12 de março de 1989</strong> por <cite style="color:#f00;font-weight:900;">Tim Berners-Lee</cite>, com o objetivo de facilitar o acesso aos arquivos na rede do CERN, uma organização europeia de pesquisa nuclear. </p>
 <section class="save"><input id="urlInput_web" placeholder="Pesquise na WEB..." /> <button class="btn-img" onclick="searchWeb()">Procurar</button></section>
