@@ -1,0 +1,32 @@
+@media (min-width:1025px) {
+div.table img{
+width: 500px;
+height:auto;
+text-align: center;
+}
+
+div.table img.icon{
+width:60px;
+height:60px;
+margin-bottom:20px;
+border-radius:15px;
+text-align: center;
+}
+
+div.table{
+margin:0 14% 0 14%;
+border:1px solid #a1a1a1;
+}
+section.a div.sentence p{
+font-size: large;
+margin-left: 13%;
+margin-right: 13%;
+}
+
+section.sidebar div.b p, details a, section.sidebar div.b details, section.page p{
+font-size: large;
+}
+
+
+
+}
