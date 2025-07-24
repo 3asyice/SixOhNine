@@ -185,15 +185,43 @@ details a{
   h2{
     font-family: sans-serif;
   }
-
+@media (min-width:1025px) {
+div.table img, div.table video, div.table iframe{
+width: 500px;
+height:auto;
+text-align: center;
+}
+div.iframevid{
+width: 500px;
+height:auto;
+}
+div.table img.icon{
+width:60px;
+height:60px;
+margin-bottom:20px;
+border-radius:15px;
+text-align: center;
+}
+div.table{
+margin:0 14% 0 14%;
+border:1px solid #a1a1a1;
+}
+section.a div.sentence p{
+font-size: large;
+margin-left: 13%;
+margin-right: 13%;
+}
+section.sidebar div.b p, details a, section.sidebar div.b details, section.page p{
+font-size: large;
+}
+}
 
 </style>
 <div class="table">
 <center>
 <h2>626 Xavier</h2>
-</center>
 <img width="95%" src="../../assets/img/sd/xavier.jpg" alt="sd" />
-
+</center>
 <div style="display: flex; justify-content: space-between;">
   <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Conhecido por</p>
   <p style="font-size:16px;text-align:right;margin: 10px;">Miguel Gabriel Bittencourt Xavier</p>
@@ -249,12 +277,16 @@ details a{
 
 
 <div class="table">
+<center>
 <img width="95%" src="../../assets/img/sd/xavierA.jpg" alt="xavier plantando">
+</center>
 <p>Foto de Xavier plantando.</p>
 </div>
 <p>Xavier fez a progressão diurna ao lado do seu canga, o soldado 625 Hönig.</p>
 <div class="table">
+<center>
 <img width="95%" src="../../assets/img/sd/xavierB.jpg" alt="xavier e honig">
+</center>
 <p>A foto acima tirada pelo homem da câmera, <a style="color:#f00;" href="../../script/cv/luciano-de-souza.html">Luciano de Souza</a>, que registrou o momento entre os dois soldados durante a progressão diurna no Campo.</p>
 </div>
 
@@ -262,17 +294,17 @@ details a{
 <p>Redes sociais:</p>
 <div style="display:block; line-break: break-all; 95%;" class="table">
   <center>
-    <img onclick="location.href='https://www.facebook.com/leonardo.honignogueira.7'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
+    <img class="icon" onclick="location.href='https://www.facebook.com/leonardo.honignogueira.7'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
     <p style="font-size: 16px;" onclick="location.href='#blank'">404_ERROЯ</p>
   </center>
   <br>
   <center>
-    <img onclick="location.href='https://www.instagram.com/leonardo_honig.n'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
+    <img class="icon" onclick="location.href='https://www.instagram.com/leonardo_honig.n'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
     <p style="font-size: 16px;" onclick="location.href='https://www.instagram.com/leonardo_honig.n'">leonardo_honig.n</p>
   </center>
   <br>
   <center>
-    <img onclick="location.href='#blank'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x - the new twitter">
+    <img class="icon" onclick="location.href='#blank'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x - the new twitter">
     <p style="font-size: 16px;" onclick="location.href='#blank'">404_ERROЯ</p>
   </center>
 </div>

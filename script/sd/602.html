@@ -142,6 +142,9 @@ details a{
   font-size: 12px;
   text-decoration: none;
 }
+
+
+
 </style>
 <body>
 <header>
@@ -186,14 +189,42 @@ details a{
     font-family: sans-serif;
   }
 
-
+@media (min-width:1025px) {
+div.table img, div.table video, div.table iframe{
+width: 500px;
+height:auto;
+text-align: center;
+}
+div.iframevid{
+width: 500px;
+height:auto;
+}
+div.table img.icon{
+width:60px;
+height:60px;
+margin-bottom:20px;
+border-radius:15px;
+text-align: center;
+}
+div.table{
+margin:0 14% 0 14%;
+border:1px solid #a1a1a1;
+}
+section.a div.sentence p{
+font-size: large;
+margin-left: 13%;
+margin-right: 13%;
+}
+section.sidebar div.b p, details a, section.sidebar div.b details, section.page p{
+font-size: large;
+}
+}
 </style>
 <div class="table">
 <center>
 <h2>602 Weber</h2>
-</center>
 <img width="95%" src="../../assets/img/sd/weber.jpg" alt="602" />
-
+</center>
 <div style="display: flex; justify-content: space-between;">
   <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Conhecido por</p>
   <p style="font-size:16px;text-align:right;margin: 10px;">Samuel Weber Aita</p>
@@ -320,28 +351,28 @@ section.a div.sentence div.google div.container {
 <p>Redes Sociais:</p>
 <div style="display:block; line-break: break-all; 95%;" class="table">
   <center>
-    <img onclick="location.href='https://www.facebook.com/samuel.weber.526'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
+    <img class="icon" onclick="location.href='https://www.facebook.com/samuel.weber.526'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
     <p style="font-size: 16px;" onclick="location.href='https://www.facebook.com/samuel.weber.526'">Sumuel Weber</p>
   </center>
   <br>
   <center>
-    <img onclick="location.href='https://www.instagram.com/samuca_weber'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
+    <img class="icon" onclick="location.href='https://www.instagram.com/samuca_weber'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
     <p style="font-size: 16px;" onclick="https://www.instagram.com/samuca_weber'">samuca_weber</p>
   </center>
   <br>
   <center>
-    <img onclick="location.href='#blank'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x">
+    <img class="icon" onclick="location.href='#blank'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x">
     <p style="font-size: 16px;" onclick="https://x.com/Samuelaita123?t=sNoB8ran44BN3BvtgBhekA&s=09'">não confirmado: Samuelaita123</p>
   </center>
   <br>
   <center>
-    <img onclick="location.href='https://br.pinterest.com/samucaweber007/'" width="35px" height="35px" src="../../assets/img/other/pinterest.png" alt="pin">
+    <img class="icon" onclick="location.href='https://br.pinterest.com/samucaweber007/'" width="35px" height="35px" src="../../assets/img/other/pinterest.png" alt="pin">
     <p style="font-size: 16px;" onclick="https://br.pinterest.com/samucaweber007/'">samucaweber007</p>
   </center>
   <br>
 
   <center>
-    <img onclick="location.href='https://youtube.com/@samuelweberaita9333'" width="35px" height="35px" src="../../assets/img/other/youtube.png" alt="pin">
+    <img class="icon" onclick="location.href='https://youtube.com/@samuelweberaita9333'" width="35px" height="35px" src="../../assets/img/other/youtube.png" alt="pin">
     <p style="font-size: 16px;" onclick="https://youtube.com/@samuelweberaita9333'">@samuelweberaita9333</p>
   </center>
   <br>

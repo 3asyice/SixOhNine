@@ -185,15 +185,43 @@ details a{
   h2{
     font-family: sans-serif;
   }
-
+@media (min-width:1025px) {
+div.table img, div.table video, div.table iframe{
+width: 500px;
+height:auto;
+text-align: center;
+}
+div.iframevid{
+width: 500px;
+height:auto;
+}
+div.table img.icon{
+width:60px;
+height:60px;
+margin-bottom:20px;
+border-radius:15px;
+text-align: center;
+}
+div.table{
+margin:0 14% 0 14%;
+border:1px solid #a1a1a1;
+}
+section.a div.sentence p{
+font-size: large;
+margin-left: 13%;
+margin-right: 13%;
+}
+section.sidebar div.b p, details a, section.sidebar div.b details, section.page p{
+font-size: large;
+}
+}
 
 </style>
 <div class="table">
 <center>
 <h2>627 Lemos</h2>
-</center>
 <img width="95%" src="../../assets/img/sd/lemos.jpg" alt="602" />
-
+</center>
 <div style="display: flex; justify-content: space-between;">
   <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Conhecido por</p>
   <p style="font-size:16px;text-align:right;margin: 10px;">João Vitor Lemos Da Silva</p>
@@ -250,7 +278,9 @@ details a{
 <p>O Lemos também se recusou a fazer a redação proposta pelo soldado Miguel sobre: <i><q>Por que não devo dar bebidas ao 09?</q></i> Quando Carvalho chegou alterado na Base e mijou nos portões das armas e depois mijou na cama beliche do alojamento.</p>
 <p>Apesar de seu alto temperamento, Lemos recebeu o Diploma de Praça Mais Distinta em 18 de setembro de 2024, esse dia conhecido por comemorar-se o dia dos Símbolos Nacionais.</p>
 <div class="table">
+<center>
 <img width="95%" src="../../assets/img/sd/lemosA.jpg" alt="Lemos recebendo certificado de aptidão física">
+</center>
 <p>Lemos recebendo o Diploma de Praça Mais Distinta das mãos do coronel Soares.</p>
 </div>
 <br><br>
@@ -258,6 +288,7 @@ details a{
   <p>Fita 27 Lado A</p>
   <center>
     <img width="95%" src="../../assets/img/cover/27-A.png" alt="FITA 27 LADO A">
+  <br>
     <audio controls type="audio/opus">
       <source src="..">
     </audio>
@@ -284,7 +315,9 @@ section.a div.sentence div.google div.container {
 }
 </style>
 <div class="table google">
+<center>
 <img width="95%" src="../../assets/img/other/I-Google-You.jpeg" alt="google image">
+</center>
 <div class="container">
 <p>>Query</p>
 <ul type="none">
@@ -318,17 +351,17 @@ section.a div.sentence div.google div.container {
 <p>Redes sociais:</p>
 <div style="display:block; line-break: break-all; 95%;" class="table">
   <center>
-    <img onclick="location.href='https://www.facebook.com/joaovitor.lemosdasilva'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
+    <img class="icon" onclick="location.href='https://www.facebook.com/joaovitor.lemosdasilva'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
     <p style="font-size: 16px;" onclick="location.href='https://www.facebook.com/joaovitor.lemosdasilva'">João Vitor Lemos</p>
   </center>
   <br>
   <center>
-    <img onclick="location.href='https://www.instagram.com/joao__vitorlemos'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
+    <img class="icon" onclick="location.href='https://www.instagram.com/joao__vitorlemos'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
     <p style="font-size: 16px;" onclick="location.href='https://www.instagram.com/joao__vitorlemos'">joao__vitorlemos</p>
   </center>
   <br>
   <center>
-    <img onclick="location.href='#blank'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x - the new twitter">
+    <img class="icon" onclick="location.href='#blank'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x - the new twitter">
     <p style="font-size: 16px;" onclick="location.href='#blank'">404_ERROЯ</p>
   </center>
 </div>

@@ -185,15 +185,43 @@ details a{
   h2{
     font-family: sans-serif;
   }
-
+@media (min-width:1025px) {
+div.table img, div.table video, div.table iframe{
+width: 500px;
+height:auto;
+text-align: center;
+}
+div.iframevid{
+width: 500px;
+height:auto;
+}
+div.table img.icon{
+width:60px;
+height:60px;
+margin-bottom:20px;
+border-radius:15px;
+text-align: center;
+}
+div.table{
+margin:0 14% 0 14%;
+border:1px solid #a1a1a1;
+}
+section.a div.sentence p{
+font-size: large;
+margin-left: 13%;
+margin-right: 13%;
+}
+section.sidebar div.b p, details a, section.sidebar div.b details, section.page p{
+font-size: large;
+}
+}
 
 </style>
 <div class="table">
 <center>
 <h2>618 Roger</h2>
-</center>
 <img width="95%" src="../../assets/img/sd/roger.jpg" alt="sd" />
-
+</center>
 <div style="display: flex; justify-content: space-between;">
   <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Conhecido por</p>
   <p style="font-size:16px;text-align:right;margin: 10px;">Luan Roger Machado De Moraes</p>
@@ -261,7 +289,9 @@ section.a div.sentence div.google ul li p {
 
 </style>
 <div class="table google">
+<center>
 <img width="95%" src="../../assets/img/other/I-Google-You.jpeg" alt="google image">
+</center>
 <p>Query</p>
 <ul type="none">
   <li><p style="word-break: break-all;" href="luanroger2005@gmail.com">luanroger2005@gmail.com</p></li>
@@ -278,17 +308,17 @@ section.a div.sentence div.google ul li p {
 <p>Redes sociais:</p>
 <div style="display:block; line-break: break-all; 95%;" class="table">
   <center>
-    <img onclick="location.href='https://www.facebook.com/luanroger.machadodemoraes'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
+    <img class="icon" onclick="location.href='https://www.facebook.com/luanroger.machadodemoraes'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
     <p style="font-size: 16px;" onclick="location.href='https://www.facebook.com/luanroger.machadodemoraes'">Luan Moraes</p>
   </center>
   <br>
   <center>
-    <img onclick="location.href='https://www.instagram.com/luan_roger'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
+    <img class="icon" onclick="location.href='https://www.instagram.com/luan_roger'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
     <p style="font-size: 16px;" onclick="location.href='https://www.instagram.com/luan_roger'">luan_roger</p>
   </center>
   <br>
   <center>
-    <img onclick="location.href='#blank'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x - the new twitter">
+    <img class="icon" onclick="location.href='#blank'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x - the new twitter">
     <p style="font-size: 16px;" onclick="location.href='#blank'">404_ERROЯ</p>
   </center>
 </div>

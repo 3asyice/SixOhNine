@@ -186,15 +186,43 @@ details a{
     /*color:#0569B5;*/
     font-family: sans-serif;
   }
-
+@media (min-width:1025px) {
+div.table img, div.table video{
+width: 500px;
+height:auto;
+text-align: center;
+}
+div.iframevid{
+width: 500px;
+height:auto;
+}
+div.table img.icon{
+width:60px;
+height:60px;
+margin-bottom:20px;
+border-radius:15px;
+text-align: center;
+}
+div.table{
+margin:0 14% 0 14%;
+border:1px solid #a1a1a1;
+}
+section.a div.sentence p{
+font-size: large;
+margin-left: 13%;
+margin-right: 13%;
+}
+section.sidebar div.b p, details a, section.sidebar div.b details, section.page p{
+font-size: large;
+}
+}
 
 </style>
 <div class="table">
 <center>
 <h2>31 Capisani</h2>
-</center>
 <img width="95%" src="../../assets/img/sgt/capisani.jpg" alt="sd" />
-
+</center>
 <div style="display: flex; justify-content: space-between;">
   <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Conhecido por</p>
   <p style="font-size:16px;text-align:right;margin: 10px;">Antônio Carlos Capisani</p>
@@ -260,6 +288,7 @@ details a{
 <div class="table">
 <center>
   <img width="95%" src="../../assets/img/cover/8-B.png" alt="FITA 8 LADO B">
+  <br>
   <audio controls type="audio/opus">
     <source src="https://web.archive.org/web/20250325075425/https://www.big-loser.site/A/Audio/FITA-8,-LADO-B.opus">
   </audio>
@@ -269,17 +298,17 @@ details a{
 <p>Redes sociais:</p>
 <div style="display:block; line-break: break-all; 95%;" class="table">
   <center>
-    <img onclick="location.href='https://www.facebook.com/antonio.capisani'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
+    <img class="icon" onclick="location.href='https://www.facebook.com/antonio.capisani'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
     <p style="font-size: 16px;" onclick="location.href='https://www.facebook.com/antonio.capisani'">Antônio Carlos Capisani</p>
   </center>
   <br>
   <center>
-    <img onclick="location.href='https://www.instagram.com/acapisani'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
+    <img class="icon" onclick="location.href='https://www.instagram.com/acapisani'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
     <p style="font-size: 16px;" onclick="location.href='https://www.instagram.com/acapisani'">acapisani</p>
   </center>
   <br>
   <center>
-    <img onclick="location.href='#blank'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x - the new twitter">
+    <img class="icon" onclick="location.href='#blank'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x - the new twitter">
     <p style="font-size: 16px;" onclick="location.href='#blank'">404_ERROЯ</p>
   </center>
 </div>
