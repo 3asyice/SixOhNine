@@ -306,6 +306,24 @@ font-size: large;
 <iframe height="300" width="95%" src="https://web.archive.org/web/20250703083239/https://3asyice.github.io/Spck-Test/forgerini-facebook-comments.mp4" frameborder="0"></iframe>
 </center>
 </div>
+<div id="waveform">
+  <!-- the waveform will be rendered here -->
+</div>
+
+<script type="module">
+  import WaveSurfer from 'https://cdn.jsdelivr.net/npm/wavesurfer.js@7/dist/wavesurfer.esm.js'
+  
+  const wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: '#0f0f0',
+    progressColor: '#383351',
+    url: '../../assets/audio/Nobre-Infantaria.mp3',
+  })
+  
+  wavesurfer.on('interaction', () => {
+    wavesurfer.play()
+  })
+</script>
 <p>Em 2023 Grégori foi aprovado em uma vaga para o Técnico em Mecânica durante o período noturno na Universidade Federal de Santa Maria. A pontuação de Grégori foi 25.</p>
 <p>Veja o pdf <span style="color:blue;" onclick="location.href='https://web.archive.org/web/20250703084042if_/https://www.ufsm.br/app/uploads/sites/342/2022/09/Vaga-confirmada-subsequentes.pdf'">aqui</span>.</p>
 
