@@ -200,33 +200,57 @@ details a{
 <li><a href="../../script/black-news/bergmann_news.html">Augusto Bergmann dançarino de CTG</a></li>
 <li><a href="https://web.archive.org/web/20250525080831if_/https://www.big-loser.site/">Notícias do Amanhã</a></li>
 <style type="text/css" media="all">
-li a span.new{
-color:red;
-font-weight: 900;
-animation: newBlink 1s alternate infinite;
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+li a span.new {
+  font-family: 'Bangers', 'Impact', 'Arial Black', sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: #FFFF00;
+  background: #FF0000;
+  padding: 0.1em 0.2em;
+  border: 2px solid #000;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 0 #000, -1px -1px 0 #000;
+  box-shadow: 0 0 10px #000000aa;
+  animation: newBlink 0.8s steps(1, start) infinite;
+  transform-origin: center;
 }
+
 @keyframes newBlink {
-0% {
-background:grey;
-}
-25%{
-background: #0013DF;
-}
-50% {
-background: #03E8D0;
-}
-75%{
-background:#FC2377;
-}
-100%{
-  font-size: 0.9em;
-color:#B6FF00;
-background: #FF0063;
-}
+  0% {
+    transform: scale(1) rotate(0deg);
+    background-color: #FF0000;
+    color: #FFFF00;
+  }
+  25% {
+    transform: scale(1.15) rotate(-2deg);
+    background-color: #00FFFF;
+    color: #FF00FF;
+  }
+  50% {
+    transform: scale(1.1) rotate(2deg);
+    background-color: #FFFF00;
+    color: #0000FF;
+  }
+  75% {
+    transform: scale(1.2) rotate(-3deg);
+    background-color: #FF00FF;
+    color: #00FF00;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    background-color: #FF0000;
+    color: #FFFF00;
+  }
 }
 </style>
+
 <li><a href="https://3asyice.github.io/Radio">RÁDIO <span class="new">NEW 📻</span></a></li>
-<li><a href="https://3asyice.github.io/Spck-Test">Mídia de Arquivos <span class="new">NEW📂</span></a></li>
+<li><a href="https://3asyice.github.io/Spck-Test">Mídia de Arquivos <span class="new">NEW 📂</span></a></li>
+
 </ul>
 </div>
 
