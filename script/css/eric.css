@@ -140,13 +140,13 @@ h1 {font:16px Arial, Helvetica, Sans Serif; font-weight:bold; color:#000;}
 #containermain{
     display: table;
     border-width: 0px;
-    width: 100%;
+    width: 80%;
     margin-right: 0px;
     margin-left: 10px;
-    margin-top: 75px;
+    margin-top: 100px;
     padding-top: 14px; 
     padding-left: 10px; 
-    padding-right:15px;
+    padding-right: 15px;
     text-align: left;
 }
 
@@ -739,6 +739,7 @@ div.top3 {
 .mw-parser-output .nowrap,
 .nowraplinks a {
 	white-space: nowrap;
+	word-wrap: break-all;
 }
 .mw-parser-output .infobox .nowrap {
 	white-space: normal !important;
