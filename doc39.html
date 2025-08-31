@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Documento 39</title>
+  <script>
+    // Verifica login
+    if(sessionStorage.getItem("logado") !== "true") {
+      window.location.href = "login.html?redirect=" + encodeURIComponent(window.location.href);
+    }
+  </script>
+</head>
+<body>
+  <h1>Documento Confidencial 39</h1>
+  <p>Este é o conteúdo secreto do doc39.html 🚀</p>
+</body>
+</html>
