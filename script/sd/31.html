@@ -327,6 +327,9 @@ function menu() {
   x.style.display = y ?
   'block' : 'none';
 }
+if (sessionStorage.getItem("logado") !== "true") {
+  window.location.href = "../../script/login.html?redirect=" + encodeURIComponent(window.location.href);
+}
 </script>
 </body>
 
