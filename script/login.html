@@ -1,37 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Login</title>
-  <script>
-    function fazerLogin(e) {
-      e.preventDefault();
-      
-      const usuario = document.getElementById("usuario").value;
-      const senha = document.getElementById("senha").value;
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description"content="Login Page for Confidential Archives"/>
+<meta name="robots" content="index, follow"/>
 
-      // ⚠️ Defina suas credenciais aqui
-      if(usuario === "admin" && senha === "1234") {
-        // Marca login ativo na sessão do navegador
-        sessionStorage.setItem("logado", "true");
-
-        // Descobre para onde redirecionar
-        const params = new URLSearchParams(window.location.search);
-        const redirect = params.get("redirect") || "https://3asyice.github.io/SixOhNine/script/sd/"; // página padrão
-
-        window.location.href = redirect;
-      } else {
-        alert("Usuário ou senha incorretos!");
-      }
-    }
-  </script>
+<title>Login</title>
 </head>
+<style>
+@font-face {
+font-family: cigarette-after-sex;
+src: url('../../assets/font/InputSansNarrow-Regular.ttf') format(woff2);
+font-display: swap;
+
+}
+*{
+box-sizing: border-box;
+}
+html, body{
+margin:0 auto;
+background: repeating-linear-gradient( 
+to bottom,
+ #2f2c24 0px,
+ #414d3b 1px,
+ #7b9878 1px,
+ #b5afa2 2px,
+ #48583c 2px,
+ #2b3035 3px,
+ #494f4a 3px,
+ #6c6359 4px,
+ #7b9878 4px
+);
+}
+h2{
+font-family: 'cigarette-after-sex', serif;
+color:#fff;
+text-align: center;
+text-shadow:0.7px 0.7px 0.7px #0015FF;
+text-transform: uppercase;
+}
+form{
+background: repeating-linear-gradient(
+to right,
+#2f2c24 0px,
+#414d3b 1px,
+#7b9878 1px,
+#b5afa2 2px,
+#48583c 2px,
+#2b3035 3px,
+#494f4a 3px,
+#6c6359 4px,
+#7b9878 4px
+);
+margin:0 auto;
+text-align: center;
+}
+form input{
+font-family: 'cigarette-after-sex', serif;
+text-indent: 16px;
+padding:4px;
+margin:16px;
+font-size: 1.0em;
+border-radius:8px;
+border:none;
+}
+form input:focus{
+outline:none;
+border:none;
+}
+</style>
 <body>
-  <h2>Área Restrita</h2>
+  <h2>Arquivo Confidencial</h2>
   <form onsubmit="fazerLogin(event)">
     <input type="text" id="usuario" placeholder="Usuário" required><br>
     <input type="password" id="senha" placeholder="Senha" required><br>
     <button type="submit">Entrar</button>
   </form>
+<script>
+function fazerLogin(e) {
+    e.preventDefault();
+const usuario = document.getElementById("usuario").value;
+const senha = document.getElementById("senha").value;
+    
+    // ⚠️ Defina suas credenciais aqui
+if (usuario === "Infantaria" && senha === "HackThePlanet") {
+      // Marca login ativo na sessão do navegador
+sessionStorage.setItem("logado", "true");
+      
+      // Descobre para onde redirecionar
+const params = new URLSearchParams(window.location.search);
+const redirect = params.get("redirect") || "https://3asyice.github.io/SixOhNine/script/sd/609"; // página padrão
+window.location.href = redirect;
+ } else {
+alert("Usuário ou senha incorretos!");
+}
+}
+</script>
 </body>
 </html>
