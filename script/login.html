@@ -77,25 +77,7 @@ border:none;
     <input type="password" id="senha" placeholder="Senha" required><br>
     <button type="submit">Entrar</button>
   </form>
-<script>
-function fazerLogin(e) {
-    e.preventDefault();
-const usuario = document.getElementById("usuario").value;
-const senha = document.getElementById("senha").value;
-    
-    // ⚠️ Defina suas credenciais aqui
-if (usuario === "Infantaria" && senha === "HackThePlanet") {
-      // Marca login ativo na sessão do navegador
-sessionStorage.setItem("logado", "true");
-      
-      // Descobre para onde redirecionar
-const params = new URLSearchParams(window.location.search);
-const redirect = params.get("redirect") || "https://3asyice.github.io/SixOhNine/script/sd/609"; // página padrão
-window.location.href = redirect;
- } else {
-alert("Usuário ou senha incorretos!");
-}
-}
+<script src="../script/js/01x609609.js">
 </script>
 </body>
 </html>
