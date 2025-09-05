@@ -1,83 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="description"content="Login Page for Confidential Archives"/>
-<meta name="robots" content="index, follow"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Login Page for Confidential Archives"/>
+  <meta name="robots" content="noindex, nofollow"/>
+  <title>Acesso Restrito</title>
 
-<title>Login</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #0b0b0b;
+      color: #e0e0e0;
+      font-family: 'VT323', monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2 {
+      color: #ff4d4d;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .warning {
+      max-width: 600px;
+      font-size: 1rem;
+      color: #aaa;
+      text-align: center;
+      margin-bottom: 25px;
+      line-height: 1.4;
+      border: 1px solid #ff4d4d;
+      padding: 12px;
+      border-radius: 4px;
+      background: rgba(255, 0, 0, 0.05);
+    }
+
+    form {
+      background: #111;
+      border: 1px solid #222;
+      padding: 25px;
+      border-radius: 8px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
+    }
+
+    form input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 12px 0;
+      font-size: 1rem;
+      background: #0b0b0b;
+      border: 1px solid #333;
+      border-radius: 4px;
+      color: #e0e0e0;
+      text-indent: 8px;
+      transition: all 0.2s;
+    }
+
+    form input:focus {
+      border-color: #ff4d4d;
+      box-shadow: 0 0 6px #ff4d4d;
+      outline: none;
+    }
+
+    form button {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ff4d4d;
+      border-radius: 4px;
+      background: #111;
+      color: #ff4d4d;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    form button:hover {
+      background: #ff4d4d;
+      color: #111;
+      box-shadow: 0 0 10px #ff4d4d;
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 0.85rem;
+      color: #555;
+      text-align: center;
+    }
+  </style>
 </head>
-<style>
-@font-face {
-font-family: cigarette-after-sex;
-src: url('../assets/font/InputSansNarrow-Regular.ttf') format(woff2);
-font-display: swap;
-
-}
-*{
-box-sizing: border-box;
-}
-html, body{
-margin:0 auto;
-background: repeating-linear-gradient( 
-to bottom,
- #2f2c24 0px,
- #414d3b 1px,
- #7b9878 1px,
- #b5afa2 2px,
- #48583c 2px,
- #2b3035 3px,
- #494f4a 3px,
- #6c6359 4px,
- #7b9878 4px
-);
-}
-h2{
-font-family: 'cigarette-after-sex', serif;
-color:#fff;
-text-align: center;
-text-shadow:0.7px 0.7px 0.7px #0015FF;
-text-transform: uppercase;
-}
-form{
-background: repeating-linear-gradient(
-to right,
-#2f2c24 0px,
-#414d3b 1px,
-#7b9878 1px,
-#b5afa2 2px,
-#48583c 2px,
-#2b3035 3px,
-#494f4a 3px,
-#6c6359 4px,
-#7b9878 4px
-);
-margin:0 auto;
-text-align: center;
-}
-form input{
-font-family: 'cigarette-after-sex', serif;
-text-indent: 16px;
-padding:4px;
-margin:16px;
-font-size: 1.0em;
-border-radius:8px;
-border:none;
-}
-form input:focus{
-outline:none;
-border:none;
-}
-</style>
 <body>
-  <h2>Arquivo Confidencial</h2>
+  <h2>ARQUIVO CONFIDENCIAL</h2>
+
+  <div class="warning">
+    ⚠️ Acesso restrito. Qualquer tentativa de acesso não autorizado será registrada e poderá implicar em <strong>responsabilidade civil e criminal</strong>, conforme a <strong>LGPD (Lei Geral de Proteção de Dados)</strong> e legislações aplicáveis.  
+    <br><br>
+    Se você não possui credenciais, <u>encerre imediatamente</u> esta sessão.
+  </div>
+
   <form onsubmit="fazerLogin(event)">
-    <input type="text" id="usuario" placeholder="Usuário" required><br>
-    <input type="password" id="senha" placeholder="Senha" required><br>
+    <input type="text" id="usuario" placeholder="Usuário" required>
+    <input type="password" id="senha" placeholder="Senha" required>
     <button type="submit">Entrar</button>
   </form>
-<script src="../script/js/01x609609.js">
-</script>
+
+  <footer>
+    © 2025 - Sistema Confidencial | Todos os acessos são monitorados.
+  </footer>
+
+  <script src="../script/js/01x609609.js"></script>
 </body>
 </html>
