@@ -27,6 +27,7 @@
 
 *{
     box-sizing: border-box;
+  }body{filter:blur(15px);transition:filter 0.5s ease;}body.ready{filter:none;
   }
   html, body{
     margin:0;
@@ -330,9 +331,18 @@ function menu() {
   x.style.display = y ?
   'block' : 'none';
 }
-if (sessionStorage.getItem("logado") !== "true") {
-  window.location.href = "../../script/login.html?redirect=" + encodeURIComponent(window.location.href);
-}
+window.addEventListener("DOMContentLoaded", () => {
+  if (sessionStorage.getItem("logado") !== "true") {
+    
+    setTimeout(() => {
+      window.location.href =
+        "../../script/login.html?redirect=" + encodeURIComponent(window.location.href);
+    }, 500);
+  } else {
+    
+    document.body.classList.add("ready");
+  }
+});
 </script>
 </body>
 
