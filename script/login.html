@@ -14,16 +14,19 @@
       box-sizing: border-box;
     }
 
-    html, body {
+html, body {
       margin: 0;
       height: 100%;
-      background: #0b0b0b;
-      color: #e0e0e0;
-      font-family: 'VT323', monospace;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+background-image:url('https://web.archive.org/web/20250914070432if_/https://3asyice.github.io/Spck-Test/0UZbrv.jpg');
+background-position:center;
+background-repeat:no-repeat;
+background-size: cover;
+color: #e0e0e0;
+font-family: 'VT323', monospace;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
     }
 
     h2 {
@@ -36,7 +39,7 @@
 
     .warning {
       max-width: 700px;
-      font-size: 1rem;
+      font-size:10px;
       color: #aaa;
       text-align: center;
       margin-bottom: 25px;
@@ -48,12 +51,13 @@
     }
 
     form {
-      background: #111;
+      background:none;
       border: 1px solid #222;
       padding: 25px;
       border-radius: 8px;
       width: 320px;
       text-align: center;
+      backdrop-filter: blur(4px);
       box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
     }
 
@@ -63,7 +67,8 @@
       padding: 10px;
       margin: 12px 0;
       font-size: 1rem;
-      background: #0b0b0b;
+      background:none;
+      backdrop-filter: blur(2px);
       border: 1px solid #333;
       border-radius: 4px;
       color: #e0e0e0;
@@ -72,7 +77,7 @@
     }
 
     form input:focus {
-      border-color: #ff4d4d;
+      border-color: #FFFC4D;
       box-shadow: 0 0 6px #ff4d4d;
       outline: none;
     }
@@ -83,7 +88,8 @@
       font-size: 1rem;
       border: 1px solid #ff4d4d;
       border-radius: 4px;
-      background: #111;
+      background:none;
+      backdrop-filter: blur(2px);
       color: #ff4d4d;
       cursor: pointer;
       transition: all 0.3s ease;
