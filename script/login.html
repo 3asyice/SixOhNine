@@ -29,111 +29,102 @@ justify-content: center;
 align-items: center;
     }
 
-    h2 {
-      color: #ff4d4d;
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-    }
+h2 {
+color: #ff4d4d;
+font-size: 2rem;
+text-align: center;
+margin-bottom: 10px;
+letter-spacing: 2px;
+}
+.warning {
+max-width: 700px;
+font-size:0.8em;
+color: #ddd;
+text-align: center;
+margin-bottom: 25px;
+line-height: 1.5;
+border: 1px solid #ff4d4d;
+padding: 14px;
+border-radius: 4px;
+background: none;
+backdrop-filter: blur(2px);
+}
 
-    .warning {
-      max-width: 700px;
-      font-size:10px;
-      color: #aaa;
-      text-align: center;
-      margin-bottom: 25px;
-      line-height: 1.5;
-      border: 1px solid #ff4d4d;
-      padding: 14px;
-      border-radius: 4px;
-      background: rgba(255, 0, 0, 0.05);
-    }
+form {
+background:none;
+border: 1px solid #222;
+padding: 25px;
+border-radius: 8px;
+width: 320px;
+text-align: center;
+backdrop-filter: blur(4px);
+box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
+}
 
-    form {
-      background:none;
-      border: 1px solid #222;
-      padding: 25px;
-      border-radius: 8px;
-      width: 320px;
-      text-align: center;
-      backdrop-filter: blur(4px);
-      box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
-    }
+form input {
+display: block;
+width: 100%;
+padding: 10px;
+margin: 12px 0;
+font-size: 1rem;
+background:none;
+backdrop-filter: blur(2px);
+border: 1px solid #333;
+border-radius: 4px;
+color: #e0e0e0;
+text-indent: 8px;
+transition: all 0.2s;
+}
 
-    form input {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      margin: 12px 0;
-      font-size: 1rem;
-      background:none;
-      backdrop-filter: blur(2px);
-      border: 1px solid #333;
-      border-radius: 4px;
-      color: #e0e0e0;
-      text-indent: 8px;
-      transition: all 0.2s;
-    }
-
-    form input:focus {
-      border-color: #FFFC4D;
-      box-shadow: 0 0 6px #ff4d4d;
-      outline: none;
-    }
-
-    form button {
-      width: 100%;
-      padding: 10px;
-      font-size: 1rem;
-      border: 1px solid #ff4d4d;
-      border-radius: 4px;
-      background:none;
-      backdrop-filter: blur(2px);
-      color: #ff4d4d;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    form button:hover {
-      background: #ff4d4d;
-      color: #111;
-      box-shadow: 0 0 10px #ff4d4d;
-    }
-
-    footer {
-      margin-top: 25px;
-      font-size: 0.85rem;
-      color: #555;
-      text-align: center;
-    }
+form input:focus {
+border-color: #FFFC4D;
+box-shadow: 0 0 6px #ff4d4d;
+outline: none;
+}
+form button {
+width: 100%;
+padding: 10px;
+font-size: 1rem;
+border: 1px solid #ff4d4d;
+border-radius: 4px;
+background:none;
+backdrop-filter: blur(2px);
+color: #ff4d4d;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+form button:hover {
+background: #ff4d4d;
+color: #111;
+box-shadow: 0 0 10px #ff4d4d;
+}
+footer {
+margin-top: 25px;
+font-size: 0.85rem;
+color: #555;
+text-align: center;
+}
   </style>
 </head>
 <body>
-  <h2>ARQUIVO CONFIDENCIAL</h2>
-
-  <div class="warning">
-    ⚠️ Este sistema contém <strong>informações pessoais e confidenciais</strong>, coletadas para uso estritamente <strong>pessoal e não econômico</strong>.  
-    <br><br>
-    A coleta e o tratamento desses dados estão amparados pela <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018)</strong>, conforme previsto no:  
-    <br>
-    <em>“Art. 4º — Esta Lei não se aplica ao tratamento de dados pessoais: I – realizado por pessoa natural para fins exclusivamente particulares e não econômicos.”</em>  
-    <br><br>
-    Qualquer tentativa de <u>acesso não autorizado</u> será registrada e poderá implicar em <strong>responsabilidade civil e criminal</strong>.  
-    <br><br>
-    Se você não possui credenciais, encerre imediatamente esta sessão.
-  </div>
-
-  <form onsubmit="fazerLogin(event)">
-    <input type="text" id="usuario" placeholder="Usuário" required>
-    <input type="password" id="senha" placeholder="Senha" required>
-    <button type="submit">Entrar</button>
+<h2>ARQUIVO CONFIDENCIAL</h2>
+<div class="warning">
+⚠️ Este sistema contém <strong>informações pessoais e confidenciais</strong>, coletadas para uso estritamente <strong>pessoal e não econômico</strong>.  
+<br><br>
+A coleta e o tratamento desses dados estão amparados pela <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018)</strong>, conforme previsto no:  
+<br>
+<em>“Art. 4º — Esta Lei não se aplica ao tratamento de dados pessoais: I – realizado por pessoa natural para fins exclusivamente particulares e não econômicos.”</em>  
+<br><br>
+Qualquer tentativa de <u>acesso não autorizado</u> será registrada e poderá implicar em <strong>responsabilidade civil e criminal</strong>.  
+<br><br>
+Se você não possui credenciais, encerre imediatamente esta sessão.
+</div>
+<form onsubmit="fazerLogin(event)">
+<input type="text" id="usuario" placeholder="Usuário" required>
+<input type="password" id="senha" placeholder="Senha" required>
+<button type="submit">Entrar</button>
   </form>
-
-  <footer>
-    © 2025 - Sistema Confidencial | Todos os acessos são monitorados.
-  </footer>
-
-  <script src="../script/js/01x609609.js"></script>
+<footer> © 2025 - Sistema Confidencial | Todos os acessos são monitorados.</footer>
+<script src="../script/js/01x609609.js"></script>
 </body>
 </html>
