@@ -7,16 +7,16 @@
   <meta name="robots" content="noindex, nofollow"/>
   <title>Acesso Restrito</title>
 
-  <style>
+<style>
     @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-    * {
+* {
       box-sizing: border-box;
     }
 
 html, body {
-      margin: 0;
-      height: 100%;
+margin: 0;
+height: 100%;
 background-image:url('https://web.archive.org/web/20250914070432if_/https://3asyice.github.io/Spck-Test/0UZbrv.jpg');
 background-position:center;
 background-repeat:no-repeat;
@@ -60,11 +60,16 @@ text-align: center;
 backdrop-filter: blur(4px);
 box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
 }
-
-form input {
+label{
+text-align: left;
+}
+form input{
+border:none!important;
+}
+form input, label {
 display: block;
 width: 100%;
-padding: 10px;
+padding: 4px 10px 4px 10px;
 margin: 12px 0;
 font-size: 1rem;
 background:none;
@@ -75,9 +80,13 @@ color: #e0e0e0;
 text-indent: 8px;
 transition: all 0.2s;
 }
-
-form input:focus {
-border-color: #FFFC4D;
+form input:hover{
+border:none;
+outline:none;
+}
+form input:focus label{
+/* border-color: #FFFC4D;*/
+border:none;
 box-shadow: 0 0 6px #ff4d4d;
 outline: none;
 }
@@ -104,6 +113,16 @@ font-size: 0.85rem;
 color: #555;
 text-align: center;
 }
+label span {
+  transition: opacity 0.3s ease;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+label:focus-within span {
+  opacity: 0;
+}
+
   </style>
 </head>
 <body>
@@ -120,8 +139,17 @@ Qualquer tentativa de <u>acesso não autorizado</u> será registrada e poderá i
 Se você não possui credenciais, encerre imediatamente esta sessão.
 </div>
 <form onsubmit="fazerLogin(event)">
-<input type="text" id="usuario" placeholder="Usuário" required>
-<input type="password" id="senha" placeholder="Senha" required>
+<label for="usuario">
+  <span>User:</span>
+  <input type="text" id="usuario" placeholder="Usuário" required>
+</label>
+
+<label for="senha">
+  <span>Senha:</span>
+  <input type="password" id="senha" placeholder="Senha" required>
+</label>
+
+
 <button type="submit">Entrar</button>
   </form>
 <footer> © 2025 - Sistema Confidencial | Todos os acessos são monitorados.</footer>
