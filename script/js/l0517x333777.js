@@ -124,3 +124,19 @@ document.addEventListener("contextmenu", function(e) {
         e.preventDefault();
     }
 });
+
+// not printable
+document.addEventListener("keydown", function (event) {
+  if (event.key === "PrintScreen") {
+    alert("Captura de tela desativada 🚫");
+    event.preventDefault();
+  }
+});
+
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "hidden") {
+    document.body.style.filter = "brightness(0)";
+  } else {
+    document.body.style.filter = "brightness(1)";
+  }
+});
