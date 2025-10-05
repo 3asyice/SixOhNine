@@ -140,3 +140,17 @@ document.addEventListener("visibilitychange", function () {
     document.body.style.filter = "brightness(1)";
   }
 });
+
+
+const foot = document.getElementsByTagName('footer')[0]; // pega o primeiro <footer>
+const p = document.createElement('p'); // cria um <p>
+
+p.innerHTML = `Nota de propósito pessoal:
+    Este site foi criado unicamente para fins pessoais e históricos, com o objetivo de documentar acontecimentos e lembranças do ano de 2024. <br><br>
+    Todas as imagens e relatos são utilizados de forma respeitosa, sem qualquer finalidade comercial, e com acesso restrito. O intuito é preservar memórias para futuras gerações.`;
+
+foot.appendChild(p); // adiciona o <p> dentro do footer
+p.style.fontSize = "0.8em";
+p.style.color = "#333";
+p.style.textAlign = "left";
+p.style.padding = "10px";
