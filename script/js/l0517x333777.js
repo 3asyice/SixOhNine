@@ -145,7 +145,7 @@ document.addEventListener("visibilitychange", function () {
 const foot = document.getElementsByTagName('footer')[0]; // pega o primeiro <footer>
 const p = document.createElement('p'); // cria um <p>
 
-p.innerHTML = `Nota de propósito pessoal:
+p.innerHTML = `©Arquivo-X <br><br>Nota de propósito pessoal:
     Este site foi criado unicamente para fins pessoais e históricos, com o objetivo de documentar acontecimentos e lembranças do ano de 2024. <br><br>
     Todas as imagens e relatos são utilizados de forma respeitosa, sem qualquer finalidade comercial, e com acesso restrito. O intuito é preservar memórias para futuras gerações.`;
 
