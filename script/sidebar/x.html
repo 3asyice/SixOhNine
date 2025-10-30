@@ -133,6 +133,8 @@
    <input type="text" id="fotoFbk" placeholder="https://files.catbox.moe/xxxxx.jpg" required>
    <a href="https://catbox.moe/" target="_blank">Enviar no Catbox</a>
  </div>
+ <label for="descricaoDois">Descrição / Biografia:</label>
+ <textarea id="descricaoDois" rows="3"></textarea>
       <label for="facebook">Facebook:</label>
       <input type="text" id="facebook" placeholder="https://facebook.com/...">
 
@@ -162,12 +164,13 @@ const pai = document.getElementById('pai').value.trim();
 const mae = document.getElementById('mae').value.trim();
       const cidade = document.getElementById('cidade').value.trim();
       const descricao = document.getElementById('descricao').value.trim();
+const descricaoDois = document.getElementById('descricaoDois').value.trim();
       const facebook = document.getElementById('facebook').value.trim();
       const instagram = document.getElementById('instagram').value.trim();
       const twitter = document.getElementById('twitter').value.trim();
       const fotoURL = document.getElementById('fotoURL').value.trim();
 const fotoFb = document.getElementById('fotoFb').value.trim();
-      
+const fotoFbk = document.getElementById('fotoFbk').value.trim();
       const preview = document.getElementById('preview');
 
       if (!nome || !fotoURL) {
@@ -450,6 +453,7 @@ font-size: large;
   </center>
   <p>Fotografia da rede social de ${nome}.</p>
 </div>
+<p>${descricaoDois || ''}</p>
 
 <p>Redes sociais:</p>
 <div style="display:block; line-break: break-all; 95%;" class="table">
