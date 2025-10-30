@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gerador de Página HTML - Diário de 609 Carvalho</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      color: #111;
+    }
+    header {
+      width: 100%;
+      background: #111;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { font-size: 22px; cursor: pointer; }
+    main {
+      background: #fff;
+      max-width: 700px;
+      width: 90%;
+      margin: 40px 0;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 { text-align: center; }
+    form { display: flex; flex-direction: column; gap: 12px; }
+    label { font-weight: 600; }
+    input[type="text"], input[type="date"], input[type="number"], textarea {
+      padding: 10px; border: 1px solid #ccc; border-radius: 8px; width: 100%;
+    }
+    button {
+      background: #000; color: #fff;
+      padding: 12px; border: none; border-radius: 8px;
+      cursor: pointer; font-size: 16px;
+      transition: background 0.3s ease;
+    }
+    button:hover { background: #444; }
+    .foto-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .foto-container input {
+      flex: 1;
+    }
+    .foto-container a {
+      background: #0078ff;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    .foto-container a:hover {
+      background: #005fcc;
+    }
+    .preview { text-align: center; margin-top: 15px; }
+    .preview img { max-width: 100%; border-radius: 10px; }
+    textarea#codigoGerado {
+      margin-top: 20px;
+      width: 100%;
+      height: 350px;
+      background: #111;
+      color: #0f0;
+      font-family: monospace;
+      border-radius: 8px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gerador de Página HTML</h1>
+    <button onclick="resetar()">↺ Limpar</button>
+  </header>
+
+  <main>
+    <h2>Crie a página de um perfil</h2>
+
+    <form id="perfilForm">
+      <label for="fotoURL">Link da Foto:</label>
+      <div class="foto-container">
+        <input type="text" id="fotoURL" placeholder="https://files.catbox.moe/xxxxx.jpg" required>
+        <a href="https://catbox.moe/" target="_blank">Enviar no Catbox</a>
+      </div>
+
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" required>
+
+      <label for="apelido">Conhecido por:</label>
+      <input type="text" id="apelido">
+
+      <label for="profissao">Profissão / Matéria:</label>
+      <input type="text" id="profissao">
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade">
+
+      <label for="nascimento">Data de Nascimento:</label>
+      <input type="date" id="nascimento">
+<label for="pai">Pai:</label>
+<input type="text" id="pai">
+<label for="mae">Mãe:</label>
+<input type="text" id="mae">
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade">
+
+
+      <label for="descricao">Descrição / Biografia:</label>
+      <textarea id="descricao" rows="3"></textarea>
+ <label for="fotoFb">Link da Foto do Facebook:</label>
+<div class="foto-container">
+  <input type="text" id="fotoFb" placeholder="https://files.catbox.moe/xxxxx.jpg" required>
+  <a href="https://catbox.moe/" target="_blank">Enviar no Catbox</a>
+</div>
+      <label for="facebook">Facebook:</label>
+      <input type="text" id="facebook" placeholder="https://facebook.com/...">
+
+      <label for="instagram">Instagram:</label>
+      <input type="text" id="instagram" placeholder="https://instagram.com/...">
+
+      <label for="twitter">X (Twitter):</label>
+      <input type="text" id="twitter" placeholder="https://x.com/...">
+
+      <button type="button" onclick="gerarHTML()">Gerar Página HTML</button>
+    </form>
+
+    <div class="preview" id="preview"></div>
+
+    <textarea id="codigoGerado" readonly placeholder="O código HTML aparecerá aqui..."></textarea>
+    <button style="margin-top:10px;" onclick="copiarCodigo()">📋 Copiar Código</button>
+  </main>
+
+  <script>
+    function gerarHTML() {
+      const nome = document.getElementById('nome').value.trim();
+      const apelido = document.getElementById('apelido').value.trim();
+      const profissao = document.getElementById('profissao').value.trim();
+      const idade = document.getElementById('idade').value.trim();
+      const nascimento = document.getElementById('nascimento').value.trim();
+const pai = document.getElementById('pai').value.trim();
+const mae = document.getElementById('mae').value.trim();
+      const cidade = document.getElementById('cidade').value.trim();
+      const descricao = document.getElementById('descricao').value.trim();
+      const facebook = document.getElementById('facebook').value.trim();
+      const instagram = document.getElementById('instagram').value.trim();
+      const twitter = document.getElementById('twitter').value.trim();
+      const fotoURL = document.getElementById('fotoURL').value.trim();
+const fotoFb = document.getElementById('fotoFb').value.trim();
+      
+      const preview = document.getElementById('preview');
+
+      if (!nome || !fotoURL) {
+        alert("Preencha o nome e o link da foto.");
+        return;
+      }
+
+      preview.innerHTML = `<img src="${fotoURL}" alt="${nome}"><p>${nome}</p>`;
+
+      const htmlGerado = `
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>${nome}</title>
+<meta name="description" content="Biografia de ${nome}"/>
+<meta name="author" content="anonymous"/>
+<meta name="copyright" content="Sd 609® Carvalho"/>
+<meta name="keywords" content="Diário de um Soldado, Diário Pessoal, Revelações, Crítica, Aperfeiçoamento Militar, Soldado, Ruínas"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="index, follow"/>
+<link rel="icon" href="../../assets/img/icon.jpg">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="all" />
+</head>
+<style type="text/css" media="all">
+@font-face {
+  font-family: Regular;
+  src: url('../../assets/font/regular.ttf') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: Input-Sans;
+  src: url('../../assets/font/InputSansNarrow-Regular.ttf') format('woff2');
+  font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+  }/*body{filter:blur(15px);transition:filter 0.5s ease;}body.ready{filter:none; */
+  }
+  html, body{
+    margin:0;
+    background:#FAFAFA;
+  }
+  header{
+    background:#FAFAFA;
+    padding:1px;
+    width:100%;
+    display:inline-flex;
+  }
+  header h1{
+    font-size: 32px;
+    color:#000;
+    cursor:pointer;
+    margin: 20px 0 20px 20px;
+    font-family: 'Input-Sans', sans-serif;
+  }
+  header button, section button{
+    cursor:pointer;
+    position:absolute;
+    right:25px;
+top:25px;
+border:none;
+background:none;
+color:#000;
+font-size: 24px;
+  }
+.x{
+background:red;
+position:fixed;
+right:0;left:0;bottom:0;top:0;
+display:none;
+overflow-y:auto;
+}
+section.page, section.page img{
+  margin:0 20px 0 20px;
+}
+section.page p{
+  font-size: 14px;
+  color:#fff;
+  padding:0px 20px 0px 20px;
+}
+section.page div.quote {
+  padding:20px 0 20px 0;
+  margin:0 20px 0 20px;
+  background:#0f0f0f;
+}
+section.a{
+  margin:30px 20px 0 20px;
+  
+}
+section.a div.sentence{
+  background:#eeeeee;
+  padding:20px 0 20px 0;
+  
+}
+section.a div.sentence p{
+  margin:10px 10px 30px 10px;
+  color:#000;
+  font-size: 12px;
+  font-family: 'Input-Sans';
+}
+h2{
+  margin:10px 10px 0 10px;
+}
+section.sidebar{
+
+}
+section.sidebar div.b{
+margin:20px;
+background:#EEEEEE;
+border:1px solid #E1E1E1;
+}
+section.sidebar div.b p{
+  margin:10px;
+  font-size: 14px;
+}
+section.sidebar div.b details{
+display: block;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+font-size: 14px;
+font-weight: 300;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+summary{
+list-style: none; 
+outline: none;
+}
+section.sidebar div.b details a{
+  display:block;
+  color:blue;
+  margin:5px 20px 0 20px;
+}
+section.sidebar div.b details summary::marker {
+            content: '';
+        }
+
+       section.sidebar div.b details summary::after {
+            content: '▼';
+            margin-left: 10px;
+            transform: rotate(0deg);
+            transition: transform 0.2s;
+        }
+
+section.sidebar div.b details[open] summary::after {content: '▲';
+        }
+details a{
+  font-size: 12px;
+  text-decoration: none;
+}
+div.table{
+    margin:0 10px 0 10px;
+    border:1px solid #A1A1A1;
+  }
+  ul li{
+    color:#A1A1A1;
+  }
+  ul li a{
+    text-decoration: none;
+    font-size: 12px;
+  }
+  img{
+    margin:10px;
+  }
+  h2{
+    font-family: sans-serif;
+  }
+@media (min-width:1025px) {
+div.table img, div.table video, div.table iframe{
+width: 500px;
+height:auto;
+text-align: center;
+}
+div.iframevid{
+width: 500px;
+height:auto;
+}
+div.table img.icon{
+width:60px;
+height:60px;
+margin-bottom:20px;
+border-radius:15px;
+text-align: center;
+}
+div.table{
+margin:0 14% 0 14%;
+border:1px solid #a1a1a1;
+}
+section.a div.sentence p{
+font-size: large;
+margin-left: 13%;
+margin-right: 13%;
+}
+section.sidebar div.b p, details a, section.sidebar div.b details, section.page p{
+font-size: large;
+}
+}
+</style>
+<body>
+<header>
+  <h1 onclick="location.href='../../script/home.html'">SixOhNine</h1>
+  <button onclick="menu()">☰</button>
+</header>
+<section class="x" id="x">
+  <button onclick="menu()">ᚷ</button>
+</section>
+<section class="sidebar">
+<div class="b">
+  <details>
+    <summary>
+      Sidebar
+    </summary>
+<a href="../../script/sidebar/tree.html">Árvore</a>
+<a href="../../script/sidebar/instrucao.html">História</a>
+<a href="../../script/sidebar/noticia.html">Notícias</a>
+<a href="section/ebfacil.html">Seções</a>
+  </details>
+</div>
+</section>
+<section class="a">
+<div class="sentence">
+<div class="table">
+<center>
+<h2>${nome}</h2>
+<img width="95%" src="${fotoURL}" alt="${nome}" />
+</center>
+<div style="display: flex; justify-content: space-between;">
+<p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Conhecido por</p>
+<p style="font-size:16px;text-align:right;margin: 10px;">${apelido || '-'}</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Status</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Vivo (a)</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+<p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Idade</p>
+<p style="font-size:16px;text-align:right;margin: 10px;">${idade || '-'}</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+<p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Data de Nascimento</p>
+<p style="font-size:16px;text-align:right;margin: 10px;">${nascimento || '-'}</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+<p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Profissão</p>
+<p style="font-size:16px;text-align:right;margin: 10px;">${profissao || '-'}</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Pai</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">${pai || '-'}</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Mãe</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">${mae || '-'}</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+<p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Cidade</p>
+<p style="font-size:16px;text-align:right;margin: 10px;">${cidade || '-'}</p></div></div></div>
+</section>
+<section class="a">
+<div class="sentence">
+<p><span style="font-size: 27px;">❝</span> <i>...</i></p>
+<p>${descricao || ''}</p>
+
+
+
+<div class="table">
+<center>
+<img width="95%" src="${fotoFb || '#'}" alt="${nome}">
+</center>
+<p>Fotografia da rede social Facebook de ${nome}.</p>
+</div>
+<br><br>
+<div class="table">
+  <center>
+    <img width="95%" src="../../assets/img/tree/Josiane-e-Guilherme.jpg" alt="Marisa Tree">
+  </center>
+  <p>Josiane e seu filho Guilherme.</p>
+</div>
+
+<p>Redes sociais:</p>
+<div style="display:block; line-break: break-all; 95%;" class="table">
+  <center>
+    <img class="icon" onclick="location.href='${facebook || '#'}'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
+    <p style="font-size: 16px;" onclick="location.href='${facebook || '#'}'">${nome}</p>
+  </center>
+  <br>
+   <center>
+     <img class="icon" onclick="location.href='${instagram || '#'}'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
+     <p style="font-size: 16px;" onclick="location.href='${instagram || '#'}'">${nome}</p>
+   </center>
+   <br>
+   <center>
+     <img class="icon" onclick="location.href='${twitter || '#'}'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x - the new twitter">
+     <p style="font-size: 16px;" onclick="location.href='${twitter || '#'}'">${nome}</p>
+  </center>
+</div>
+</div>
+  
+</section>
+
+<footer>
+</footer>
+</body></html>
+      `.trim();
+
+      document.getElementById('codigoGerado').value = htmlGerado;
+    }
+
+    function copiarCodigo() {
+      const codigo = document.getElementById('codigoGerado');
+      codigo.select();
+      document.execCommand('copy');
+      alert("✅ Código HTML copiado!");
+    }
+
+    function resetar() {
+      document.getElementById('perfilForm').reset();
+      document.getElementById('codigoGerado').value = "";
+      document.getElementById('preview').innerHTML = "";
+    }
+  </script>
+</body>
+</html>
