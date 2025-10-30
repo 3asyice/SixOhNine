@@ -128,6 +128,11 @@
   <input type="text" id="fotoFb" placeholder="https://files.catbox.moe/xxxxx.jpg" required>
   <a href="https://catbox.moe/" target="_blank">Enviar no Catbox</a>
 </div>
+ <label for="fotoFbk">Link de outra Foto do Facebook:</label>
+ <div class="foto-container">
+   <input type="text" id="fotoFbk" placeholder="https://files.catbox.moe/xxxxx.jpg" required>
+   <a href="https://catbox.moe/" target="_blank">Enviar no Catbox</a>
+ </div>
       <label for="facebook">Facebook:</label>
       <input type="text" id="facebook" placeholder="https://facebook.com/...">
 
@@ -441,9 +446,9 @@ font-size: large;
 <br><br>
 <div class="table">
   <center>
-    <img width="95%" src="../../assets/img/tree/Josiane-e-Guilherme.jpg" alt="Marisa Tree">
+    <img width="95%" src="${fotoFbk || '#'}" alt="${nome}">
   </center>
-  <p>Josiane e seu filho Guilherme.</p>
+  <p>Fotografia da rede social de ${nome}.</p>
 </div>
 
 <p>Redes sociais:</p>
