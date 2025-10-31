@@ -107,12 +107,15 @@
 
       <label for="profissao">Profissão / Matéria:</label>
       <input type="text" id="profissao">
-
+  <label for="status">Status:</label>
+  <input type="text" id="status" placeholder="Vivo (a) ou Falecido (a)">
       <label for="idade">Idade:</label>
       <input type="number" id="idade">
 
       <label for="nascimento">Data de Nascimento:</label>
       <input type="date" id="nascimento">
+     <label for="fraseEfeito">Data de Nascimento:</label>
+ <input type="text" id="fraseEfeito">
 <label for="pai">Pai:</label>
 <input type="text" id="pai">
 <label for="mae">Mãe:</label>
@@ -120,19 +123,24 @@
       <label for="cidade">Cidade:</label>
       <input type="text" id="cidade">
 
-
-      <label for="descricao">Descrição / Biografia:</label>
+  <label for="descricao">Descrição / Biografia:</label>
       <textarea id="descricao" rows="3"></textarea>
  <label for="fotoFb">Link da Foto do Facebook:</label>
 <div class="foto-container">
   <input type="text" id="fotoFb" placeholder="https://files.catbox.moe/xxxxx.jpg" required>
   <a href="https://catbox.moe/" target="_blank">Enviar no Catbox</a>
 </div>
+<label for="descricaoFoto">Descrição da Foto do link acima:</label>
+<input type="text" id="descricaoFoto">
+
  <label for="fotoFbk">Link de outra Foto do Facebook:</label>
  <div class="foto-container">
    <input type="text" id="fotoFbk" placeholder="https://files.catbox.moe/xxxxx.jpg" required>
    <a href="https://catbox.moe/" target="_blank">Enviar no Catbox</a>
  </div>
+ <label for="descricaoFto">Descrição da Foto do link acima:</label>
+<input type="text" id="descricaoFto">
+ 
  <label for="descricaoDois">Descrição / Biografia:</label>
  <textarea id="descricaoDois" rows="3"></textarea>
       <label for="facebook">Facebook:</label>
@@ -160,25 +168,29 @@
       const profissao = document.getElementById('profissao').value.trim();
       const idade = document.getElementById('idade').value.trim();
       const nascimento = document.getElementById('nascimento').value.trim();
+const status = document.getElementById('status').value.trim();
 const pai = document.getElementById('pai').value.trim();
 const mae = document.getElementById('mae').value.trim();
-      const cidade = document.getElementById('cidade').value.trim();
-      const descricao = document.getElementById('descricao').value.trim();
+const cidade = document.getElementById('cidade').value.trim();
+const descricao = document.getElementById('descricao').value.trim();
+const descricaoFoto = document.getElementById('descricaoFoto').value.trim();
+const descricaoFto = document.getElementById('descricaoFto').value.trim();
 const descricaoDois = document.getElementById('descricaoDois').value.trim();
-      const facebook = document.getElementById('facebook').value.trim();
-      const instagram = document.getElementById('instagram').value.trim();
-      const twitter = document.getElementById('twitter').value.trim();
-      const fotoURL = document.getElementById('fotoURL').value.trim();
+const facebook = document.getElementById('facebook').value.trim();
+const instagram = document.getElementById('instagram').value.trim();
+const fraseEfeito = document.getElementById('fraseEfeito').value.trim();
+const twitter = document.getElementById('twitter').value.trim();
+const fotoURL = document.getElementById('fotoURL').value.trim();
 const fotoFb = document.getElementById('fotoFb').value.trim();
 const fotoFbk = document.getElementById('fotoFbk').value.trim();
-      const preview = document.getElementById('preview');
+const preview = document.getElementById('preview');
 
       if (!nome || !fotoURL) {
         alert("Preencha o nome e o link da foto.");
         return;
       }
 
-      preview.innerHTML = `<img src="${fotoURL}" alt="${nome}"><p>${nome}</p>`;
+preview.innerHTML = `<img src="${fotoURL}" alt="${nome}"><p>${nome}</p>`;
 
       const htmlGerado = `
 <!DOCTYPE html>
@@ -404,7 +416,7 @@ font-size: large;
 </div>
 <div style="display: flex; justify-content: space-between;">
   <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Status</p>
-  <p style="font-size:16px;text-align:right;margin: 10px;">Vivo (a)</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">${status || '-'}</p>
 </div>
 <div style="display: flex; justify-content: space-between;">
 <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Idade</p>
@@ -432,7 +444,7 @@ font-size: large;
 </section>
 <section class="a">
 <div class="sentence">
-<p><span style="font-size: 27px;">❝</span> <i>...</i></p>
+<p><span style="font-size: 27px;">❝</span> <i>${fraseEfeito || '.'}..</i></p>
 <p>${descricao || ''}</p>
 
 
@@ -441,14 +453,14 @@ font-size: large;
 <center>
 <img width="95%" src="${fotoFb || '#'}" alt="${nome}">
 </center>
-<p>Fotografia da rede social Facebook de ${nome}.</p>
+<p>${descricaoFoto || ''}</p>
 </div>
 <br><br>
 <div class="table">
   <center>
     <img width="95%" src="${fotoFbk || '#'}" alt="${nome}">
   </center>
-  <p>Fotografia da rede social de ${nome}.</p>
+  <p>${descricaoFto || ''}</p>
 </div>
 <p>${descricaoDois || ''}</p>
 
