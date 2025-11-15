@@ -145,14 +145,23 @@
  <textarea id="descricaoDois" rows="3"></textarea>
       <label for="facebook">Facebook:</label>
       <input type="text" id="facebook" placeholder="https://facebook.com/...">
+<label for="facebook_user">Nome de usuário no facebook</label>
+<input type="text" id="facebook_user" placeholder="Seu nome de usuário...">
+
 
       <label for="instagram">Instagram:</label>
       <input type="text" id="instagram" placeholder="https://instagram.com/...">
+ <label for="instagram_user">Nome de usuário no instagram</label>
+ <input type="text" id="instagram_user" placeholder="Seu nome de usuário...">
 
-      <label for="twitter">X (Twitter):</label>
+<label for="twitter">X (Twitter):</label>
       <input type="text" id="twitter" placeholder="https://x.com/...">
+      
+ <label for="twitter_user">Nome de usuário no twitter</label>
+ <input type="text" id="twitter_user" placeholder="Seu nome de usuário...">
 
-      <button type="button" onclick="gerarHTML()">Gerar Página HTML</button>
+
+<button type="button" onclick="gerarHTML()">Gerar Página HTML</button>
     </form>
 
     <div class="preview" id="preview"></div>
@@ -165,9 +174,16 @@
     function gerarHTML() {
       const nome = document.getElementById('nome').value.trim();
       const apelido = document.getElementById('apelido').value.trim();
+
+const twitter_user = document.getElementById('twitter_user').value.trim();
       const profissao = document.getElementById('profissao').value.trim();
+      
+const instagram_user = document.getElementById('instagram_user').value.trim();
       const idade = document.getElementById('idade').value.trim();
       const nascimento = document.getElementById('nascimento').value.trim();
+      
+  
+const facebook_user = document.getElementById('facebook_user').value.trim();
 const status = document.getElementById('status').value.trim();
 const pai = document.getElementById('pai').value.trim();
 const mae = document.getElementById('mae').value.trim();
@@ -468,17 +484,17 @@ font-size: large;
 <div style="display:block; line-break: break-all; 95%;" class="table">
   <center>
     <img class="icon" onclick="location.href='${facebook || '#'}'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
-    <p style="font-size: 16px;" onclick="location.href='${facebook || '#'}'">${nome}</p>
+    <p style="font-size: 16px;" onclick="location.href='${facebook || '#'}'">${facebook_user || 'ERЯOR 404'}</p>
   </center>
   <br>
    <center>
      <img class="icon" onclick="location.href='${instagram || '#'}'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
-     <p style="font-size: 16px;" onclick="location.href='${instagram || '#'}'">${nome}</p>
+     <p style="font-size: 16px;" onclick="location.href='${instagram || '#'}'">${instagram_user || 'ERЯOR 404'}</p>
    </center>
    <br>
    <center>
      <img class="icon" onclick="location.href='${twitter || '#'}'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x - the new twitter">
-     <p style="font-size: 16px;" onclick="location.href='${twitter || '#'}'">${nome}</p>
+     <p style="font-size: 16px;" onclick="location.href='${twitter || '#'}'">${twitter_user || 'ERЯOR 404'}</p>
   </center>
 </div>
 </div>
