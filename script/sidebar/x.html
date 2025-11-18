@@ -209,7 +209,7 @@ const preview = document.getElementById('preview');
         return;
       }
 
-preview.innerHTML = `<img src="${fotoURL}" alt="${nome}"><p>${nome}</p>`;
+preview.innerHTML = `<img src="${fotoURL || 'https://files.catbox.moe/79x75s.jpg'}" alt="${nome}"><p>${nome}</p>`;
 sound.play();
       const htmlGerado = `
 <!DOCTYPE html>
@@ -427,7 +427,7 @@ font-size: large;
 <div class="table">
 <center>
 <h2>${nome}</h2>
-<img width="95%" src="${fotoURL}" alt="${nome}" />
+<img width="95%" src="${fotoURL || 'https://files.catbox.moe/79x75s.jpg'}" alt="${nome}" />
 </center>
 <div style="display: flex; justify-content: space-between;">
 <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Conhecido por</p>
