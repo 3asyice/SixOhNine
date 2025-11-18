@@ -174,10 +174,6 @@
     function gerarHTML() {
 const audio = document.getElementById('audio');
 const sound = new Audio('https://files.catbox.moe/4dceup.mp3');
-audio.addEventListener('click', (e) => {
-sound.play();
-}
-)
       
       const nome = document.getElementById('nome').value.trim();
       const apelido = document.getElementById('apelido').value.trim();
@@ -214,7 +210,7 @@ const preview = document.getElementById('preview');
       }
 
 preview.innerHTML = `<img src="${fotoURL}" alt="${nome}"><p>${nome}</p>`;
-
+sound.play();
       const htmlGerado = `
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -520,13 +516,10 @@ font-size: large;
 const audio1 = document.getElementById('copy');
 const soundGlass = new Audio('https://files.catbox.moe/hmqf05.mp3');
 
-audio1.addEventListener('click', (e) => {
-soundGlass.play();
-}
-);
 const codigo = document.getElementById('codigoGerado');
 codigo.select();
 document.execCommand('copy');
+soundGlass.play();
 // alert("✅ Código HTML copiado!");
 }
 
