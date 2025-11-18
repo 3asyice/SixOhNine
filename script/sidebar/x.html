@@ -523,14 +523,12 @@ const soundGlass = new Audio('https://files.catbox.moe/hmqf05.mp3');
 audio1.addEventListener('click', (e) => {
 soundGlass.play();
 }
-)
-      
-      const codigo = document.getElementById('codigoGerado');
-      codigo.select();
-      document.execCommand('copy');
-      
-      alert("✅ Código HTML copiado!");
-    }
+);
+const codigo = document.getElementById('codigoGerado');
+codigo.select();
+document.execCommand('copy');
+alert("✅ Código HTML copiado!");
+}
 
     function resetar() {
       document.getElementById('perfilForm').reset();
