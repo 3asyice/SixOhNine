@@ -167,7 +167,7 @@
     <div class="preview" id="preview"></div>
 
     <textarea id="codigoGerado" readonly placeholder="O código HTML aparecerá aqui..."></textarea>
-    <button style="margin-top:10px;" onclick="copiarCodigo()">📋 Copiar Código</button>
+    <button id="copy" style="margin-top:10px;" onclick="copiarCodigo()">📋 Copiar Código</button>
   </main>
 
   <script>
@@ -517,9 +517,18 @@ font-size: large;
     }
 
     function copiarCodigo() {
+const audio1 = document.getElementById('copy');
+const soundGlass = new Audio('https://files.catbox.moe/hmqf05.mp3');
+
+audio1.addEventListener('click', (e) => {
+soundGlass.play();
+}
+)
+      
       const codigo = document.getElementById('codigoGerado');
       codigo.select();
       document.execCommand('copy');
+      
       alert("✅ Código HTML copiado!");
     }
 
