@@ -161,7 +161,7 @@
  <input type="text" id="twitter_user" placeholder="Seu nome de usuário...">
 
 
-<button type="button" onclick="gerarHTML()">Gerar Página HTML</button>
+<button id="audio" type="button" onclick="gerarHTML()">Gerar Página HTML</button>
     </form>
 
     <div class="preview" id="preview"></div>
@@ -172,6 +172,14 @@
 
   <script>
     function gerarHTML() {
+const audio = document.getElementById('audio');
+const sound = new Audio('https://files.catbox.moe/4dceup.mp3')
+
+audio.addEventListener('click', (e) => {
+sound.play()
+}
+)
+      
       const nome = document.getElementById('nome').value.trim();
       const apelido = document.getElementById('apelido').value.trim();
 
@@ -521,6 +529,8 @@ font-size: large;
       document.getElementById('codigoGerado').value = "";
       document.getElementById('preview').innerHTML = "";
     }
+    
+
   </script>
 </body>
 </html>
