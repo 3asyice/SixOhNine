@@ -72,6 +72,7 @@ else if (mes === 3 && dia === 11){  anv.innerText = `Parabéns! Hoje é anivers�
 else if (mes === 2 && dia === 23){  anv.innerText = `Parabéns! Hoje é aniversário de Fabiane Carvalho🎂`;}
 else if (mes === 5 && dia === 25){  anv.innerText = `Parabéns! Hoje é aniversário de Roni Emerson Carvalho🎂`;}
 else if (mes === 9 && dia === 12){  anv.innerText = `Parabéns! Hoje é aniversário de Janderson Carvalho 🎂`;}
+else if (mes === 0 && dia === 16){  anv.innerText = `Parabéns! Hoje é aniversário de Claudinei Dalla Lana 🎂`;}
 else {
   anv.innerText = `Hoje não tem nenhuma comemoração.`;
 }
