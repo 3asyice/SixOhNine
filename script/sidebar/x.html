@@ -112,84 +112,69 @@
 <option value="Vivo (a)">Vivo (a)</option>
 <option value="Falecido (a)">Falecido (a)</option>
 </select>
-  
-      <label for="idade">Idade:</label>
-      <input type="number" id="idade">
+<label for="idade">Idade:</label>
+<input type="number" id="idade">
 
-      <label for="nascimento">Data de Nascimento:</label>
-      <input type="date" id="nascimento">
-     <label for="fraseEfeito">Qualquer frase que lembre a pessoa:</label>
+<label for="nascimento">Data de Nascimento:</label>
+<input type="date" id="nascimento">
+<label for="fraseEfeito">Qualquer frase que lembre a pessoa:</label>
  <input type="text" id="fraseEfeito">
 <label for="pai">Pai:</label>
 <input type="text" id="pai">
 <label for="mae">Mãe:</label>
 <input type="text" id="mae">
-      <label for="cidade">Cidade:</label>
-      <input type="text" id="cidade">
-
-  <label for="descricao">Descrição / Biografia:</label>
-      <textarea id="descricao" rows="3"></textarea>
- <label for="fotoFb">Link da Foto do Facebook:</label>
+<label for="cidade">Cidade:</label>
+<input type="text" id="cidade">
+<label for="descricao">Descrição / Biografia:</label>
+<textarea id="descricao" rows="3"></textarea>
+<label for="fotoFb">Link da Foto do Facebook:</label>
 <div class="foto-container">
-  <input type="text" id="fotoFb" placeholder="https://files.catbox.moe/xxxxx.jpg" required>
-  <a href="https://catbox.moe/" target="_blank">Enviar no Catbox</a>
+<input type="text" id="fotoFb" placeholder="https://files.catbox.moe/xxxxx.jpg" required>
+<a href="https://catbox.moe/" target="_blank">Enviar no Catbox</a>
 </div>
 <label for="descricaoFoto">Descrição da Foto do link acima:</label>
 <input type="text" id="descricaoFoto">
 
- <label for="fotoFbk">Link de outra Foto do Facebook:</label>
- <div class="foto-container">
-   <input type="text" id="fotoFbk" placeholder="https://files.catbox.moe/xxxxx.jpg" required>
-   <a href="https://catbox.moe/" target="_blank">Enviar no Catbox</a>
+<label for="fotoFbk">Link de outra Foto do Facebook:</label>
+<div class="foto-container">
+<input type="text" id="fotoFbk" placeholder="https://files.catbox.moe/xxxxx.jpg" required>
+<a href="https://catbox.moe/" target="_blank">Enviar no Catbox</a>
  </div>
  <label for="descricaoFto">Descrição da Foto do link acima:</label>
 <input type="text" id="descricaoFto">
  
- <label for="descricaoDois">Descrição / Biografia:</label>
- <textarea id="descricaoDois" rows="3"></textarea>
-      <label for="facebook">Facebook:</label>
-      <input type="text" id="facebook" placeholder="https://facebook.com/...">
+<label for="descricaoDois">Descrição / Biografia:</label>
+<textarea id="descricaoDois" rows="3"></textarea>
+<label for="facebook">Facebook:</label>
+<input type="text" id="facebook" placeholder="https://facebook.com/...">
 <label for="facebook_user">Nome de usuário no facebook</label>
 <input type="text" id="facebook_user" placeholder="Seu nome de usuário...">
-
-
-      <label for="instagram">Instagram:</label>
-      <input type="text" id="instagram" placeholder="https://instagram.com/...">
- <label for="instagram_user">Nome de usuário no instagram</label>
- <input type="text" id="instagram_user" placeholder="Seu nome de usuário...">
+<label for="instagram">Instagram:</label>
+<input type="text" id="instagram" placeholder="https://instagram.com/...">
+<label for="instagram_user">Nome de usuário no instagram</label>
+<input type="text" id="instagram_user" placeholder="Seu nome de usuário...">
 
 <label for="twitter">X (Twitter):</label>
-      <input type="text" id="twitter" placeholder="https://x.com/...">
-      
- <label for="twitter_user">Nome de usuário no twitter</label>
+<input type="text" id="twitter" placeholder="https://x.com/...">
+<label for="twitter_user">Nome de usuário no twitter</label>
  <input type="text" id="twitter_user" placeholder="Seu nome de usuário...">
-
-
 <button id="audio" type="button" onclick="gerarHTML()">Gerar Página HTML</button>
     </form>
-
-    <div class="preview" id="preview"></div>
-
-    <textarea id="codigoGerado" readonly placeholder="O código HTML aparecerá aqui..."></textarea>
-    <button id="copy" style="margin-top:10px;" onclick="copiarCodigo()">📋 Copiar Código</button>
-  </main>
-
-  <script>
-    function gerarHTML() {
+<div class="preview" id="preview"></div>
+<textarea id="codigoGerado" readonly placeholder="O código HTML aparecerá aqui..."></textarea>
+<button id="copy" style="margin-top:10px;" onclick="copiarCodigo()">📋 Copiar Código</button>
+</main>
+<script>
+function gerarHTML() {
 const audio = document.getElementById('audio');
 const sound = new Audio('https://files.catbox.moe/4dceup.mp3');
-      
-      const nome = document.getElementById('nome').value.trim();
-      const apelido = document.getElementById('apelido').value.trim();
-
+const nome = document.getElementById('nome').value.trim();
+const apelido = document.getElementById('apelido').value.trim();
 const twitter_user = document.getElementById('twitter_user').value.trim();
-      const profissao = document.getElementById('profissao').value.trim();
-      
+const profissao = document.getElementById('profissao').value.trim();
 const instagram_user = document.getElementById('instagram_user').value.trim();
-      const idade = document.getElementById('idade').value.trim();
-      const nascimento = document.getElementById('nascimento').value.trim();
-      
-  
+const idade = document.getElementById('idade').value.trim();
+const nascimento = document.getElementById('nascimento').value.trim();
 const facebook_user = document.getElementById('facebook_user').value.trim();
 const status = document.getElementById('status').value.trim();
 const pai = document.getElementById('pai').value.trim();
