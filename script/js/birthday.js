@@ -5,7 +5,7 @@ const mes = new Date().getMonth();
 const dia = new Date().getDate();
 
 if (mes === 0 && dia === 27) {
-  anv.innerText = `Parabéns! Hoje é aniversário de Guilherme de Abreu Carvalho 🍿`;
+  anv.innerText = `Parabéns! Hoje é aniversário de Guilherme de Abreu Carvalho e Tarcísio Carvalho dos Santos 🍿`;
 }
 /*
   Janeiro   = 0
