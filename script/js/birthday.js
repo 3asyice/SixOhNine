@@ -58,7 +58,7 @@ else if (mes === 4 && dia === 26)
   anv.innerText = `Parabéns! Hoje é aniversário de Cássia Araújo 🎂`;
 }
 else if (mes === 8 && dia === 23){  anv.innerText = `Parabéns! Hoje é aniversário de Odete Fernandes Braga🎂`;}
-else if (mes === 11 && dia === 24){  anv.innerText = `Parabéns! Hoje é aniversário de Regiane Braga Fernandes 🎂`;}
+else if (mes === 10 && dia === 23){  anv.innerText = `Parabéns! Hoje é aniversário de Regiane Braga Fernandes 🎂`;}
 else if (mes === 8 && dia === 28){  anv.innerText = `Parabéns! Hoje é aniversário de Cellanira Braga 🎂`;}
 else if (mes === 11 && dia === 17){  anv.innerText = `Parabéns! Hoje é aniversário de Abel Fernandes 🎂`;}
 else if (mes === 2 && dia === 26){  anv.innerText = `Parabéns! Hoje é aniversário de Kátia dos Santos Batista Fernandes🎂`;}
