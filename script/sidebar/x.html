@@ -163,6 +163,7 @@
 <div class="preview" id="preview"></div>
 <textarea id="codigoGerado" readonly placeholder="O código HTML aparecerá aqui..."></textarea>
 <button id="copy" style="margin-top:10px;" onclick="copiarCodigo()">📋 Copiar Código</button>
+<button style="margin-top:10px;" onclick="enviarWhatsapp()">🖥️Enviar código pelo Whatsapp</button>
 </main>
 <script>
 function gerarHTML() {
@@ -518,6 +519,29 @@ soundGlass.play();
       document.getElementById('preview').innerHTML = "";
     }
     
+
+
+// enviar pelo whats
+function enviarWhatsapp() {
+  const codigo = document.getElementById('codigoGerado').value;
+
+  if (!codigo.trim()) {
+    alert("Gere o código HTML antes de enviar.");
+    return;
+  }
+
+  // Codifica o texto corretamente para a URL
+  const textoCodificado = encodeURIComponent(codigo);
+
+  // Número do WhatsApp
+  const numero = "55991639092";
+
+  // Monta a URL final
+  const url = `https://wa.me/${numero}?text=${textoCodificado}`;
+
+  // Abre a conversa já com o código anexado
+  window.open(url, "_blank");
+}
 
   </script>
 </body>
