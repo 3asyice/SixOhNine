@@ -166,6 +166,12 @@
 <button style="margin-top:10px;" onclick="enviarWhatsapp()">🖥️Enviar código pelo Whatsapp</button>
 </main>
 <script>
+function formatarDataDMA(data) {
+  if (!data) return "-";
+  const partes = data.split("-"); // divide: ano, mês, dia
+  return `${partes[2]}/${partes[1]}/${partes[0]}`;
+}
+
 function gerarHTML() {
 const audio = document.getElementById('audio');
 const sound = new Audio('https://files.catbox.moe/4dceup.mp3');
@@ -433,7 +439,7 @@ font-size: large;
 </div>
 <div style="display: flex; justify-content: space-between;">
 <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Data de Nascimento</p>
-<p style="font-size:16px;text-align:right;margin: 10px;">${nascimento || '-'}</p>
+<p style="font-size:16px;text-align:right;margin: 10px;">${formatarDataDMA(nascimento)}</p>
 </div>
 <div style="display: flex; justify-content: space-between;">
 <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Profissão</p>
@@ -495,7 +501,7 @@ font-size: large;
 </section>
 
 <footer>
-</footer>
+</footer><script defer src="../../script/js/idd.js">
 </body></html>
       `.trim();
 

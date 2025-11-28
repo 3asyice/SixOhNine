@@ -86,3 +86,8 @@ else if (mes === 4 && dia === 4){  anv.innerText = `Parabéns! Hoje é aniver de
 else {
   anv.innerText = `Hoje não tem nenhuma comemoração.`;
 }
+
+
+
+// contador de idade
+
