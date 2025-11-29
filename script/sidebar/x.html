@@ -169,7 +169,7 @@
 function formatarDataDMA(data) {
   if (!data) return "-";
   const partes = data.split("-"); // divide: ano, mês, dia
-  return `${partes[2]}/${partes[1]}/${partes[0]}`;
+  return `${partes[2]}-${partes[1]}-${partes[0]}`;
 }
 
 function gerarHTML() {
