@@ -92,4 +92,5 @@ else {
 
 
 // contador de idade
+// blob:https://lelinhtinh.github.io/4dd59083-a23f-49ca-b221-0f76812272ef
 
