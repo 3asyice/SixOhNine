@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Pedro Gabriel Azevedo</title>
+  <meta name="description" content="Biografia de Pedro Gabriel Azevedo"/>
+  <meta name="author" content="anonymous"/>
+  <meta name="copyright" content="Sd 609® Carvalho"/>
+  <meta name="keywords" content="Diário de um Soldado, Diário Pessoal, Revelações, Crítica, Aperfeiçoamento Militar, Soldado, Ruínas"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="icon" href="../../assets/img/icon.jpg">
+  <link rel="stylesheet" href="../../style.css" type="text/css" media="all" />
+</head>
+<style type="text/css" media="all">
+@font-face {
+  font-family: Regular;
+  src: url('../../assets/font/regular.ttf') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: Input-Sans;
+  src: url('../../assets/font/InputSansNarrow-Regular.ttf') format('woff2');
+  font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+  }
+body{filter:blur(15px);transition:filter 0.5s ease;}body.ready{filter:none;
+  }
+  html, body{
+    margin:0;
+    background:#FAFAFA;
+  }
+  header{
+    background:#FAFAFA;
+    padding:1px;
+    width:100%;
+    display:inline-flex;
+  }
+  header h1{
+    font-size: 32px;
+    color:#000;
+    cursor:pointer;
+    margin: 20px 0 20px 20px;
+    font-family: 'Input-Sans', sans-serif;
+  }
+  header button, section button{
+    cursor:pointer;
+    position:absolute;
+    right:25px;
+top:25px;
+border:none;
+background:none;
+color:#000;
+font-size: 24px;
+  }
+.x{
+background:red;
+position:fixed;
+right:0;left:0;bottom:0;top:0;
+display:none;
+overflow-y:auto;
+}
+section.page, section.page img{
+  margin:0 20px 0 20px;
+}
+section.page p{
+  font-size: 14px;
+  color:#fff;
+  padding:0px 20px 0px 20px;
+}
+section.page div.quote {
+  padding:20px 0 20px 0;
+  margin:0 20px 0 20px;
+  background:#0f0f0f;
+}
+section.a{
+  margin:30px 20px 0 20px;
+  
+}
+section.a div.sentence{
+  background:#eeeeee;
+  padding:20px 0 20px 0;
+  
+}
+section.a div.sentence p{
+  margin:10px 10px 30px 10px;
+  color:#000;
+  font-size: 12px;
+  font-family: 'Input-Sans';
+}
+h2{
+  margin:10px 10px 0 10px;
+}
+section.sidebar{
+
+}
+section.sidebar div.b{
+margin:20px;
+background:#EEEEEE;
+border:1px solid #E1E1E1;
+}
+section.sidebar div.b p{
+  margin:10px;
+  font-size: 14px;
+}
+section.sidebar div.b details{
+display: block;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+font-size: 14px;
+font-weight: 300;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+summary{
+list-style: none; 
+outline: none;
+}
+section.sidebar div.b details a{
+  display:block;
+  color:blue;
+  margin:5px 20px 0 20px;
+}
+section.sidebar div.b details summary::marker {
+            content: '';
+        }
+
+       section.sidebar div.b details summary::after {
+            content: '▼';
+            margin-left: 10px;
+            transform: rotate(0deg);
+            transition: transform 0.2s;
+        }
+
+section.sidebar div.b details[open] summary::after {content: '▲';
+        }
+details a{
+  font-size: 12px;
+  text-decoration: none;
+}
+</style>
+<body>
+<header>
+  <h1 onclick="location.href='../../script/home.html'">SixOhNine</h1>
+  <button onclick="menu()">☰</button>
+</header>
+<section class="x" id="x">
+  <button onclick="menu()">ᚷ</button>
+</section>
+<section class="sidebar">
+<div class="b">
+  <details>
+    <summary>
+      Sidebar
+    </summary>
+<a href="../../script/sidebar/militares.html">Militares</a>
+<a href="../../script/sidebar/instrucao.html">Instruções</a>
+<a href="../../script/sidebar/noticia.html">Notícias</a>
+<a href="section/ebfacil.html">Seções</a>
+  </details>
+</div>
+</section>
+<section class="a">
+<div class="sentence">
+
+<style>
+  div.table{
+    margin:0 10px 0 10px;
+    border:1px solid #A1A1A1;
+  }
+  ul li{
+    color:#A1A1A1;
+  }
+  ul li a{
+    text-decoration: none;
+    font-size: 12px;
+  }
+  img, iframe{
+    margin:10px;
+  }
+  h2{
+    font-family: sans-serif;
+  }
+.protected-img {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+img {
+  -webkit-touch-callout: none; /* Safari iOS */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* padrão */
+}
+
+
+@media (min-width:1025px) {
+div.table img{
+width: 500px;
+height:auto;
+text-align: center;
+}
+div.iframevid{
+width: 500px;
+height:auto;
+}
+div.table img.icon{
+width:60px;
+height:60px;
+margin-bottom:20px;
+border-radius:15px;
+text-align: center;
+}
+div.table{
+margin:0 14% 0 14%;
+border:1px solid #a1a1a1;
+}
+section.a div.sentence p{
+font-size: large;
+margin-left: 13%;
+margin-right: 13%;
+}
+section.sidebar div.b p, details a, section.sidebar div.b details, section.page p{
+font-size: large;
+}
+}
+
+</style>
+<div class="table">
+<center>
+<h2>03 Azevedo</h2>
+<img class="protected-img" width="95%" src="../../assets/img/sgt/azevedo.jpg" alt="602" />
+</center>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Conhecido por</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Pedro Gabriel de Azevedo Machado</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Número</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">03</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Seção</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Unknown</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Status</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Militar Ativo</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Primeira Aparição</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Unknown</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Patente</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">3º Sargento</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Apelido</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">-</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Canga</p>
+  <p style="cursor:pointer;font-size:16px;text-align:right;margin: 10px;">Unknown</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Divisão</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">-</p>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <p style="font-weight:900;font-size:16px;text-align:left;margin: 10px;">Cidade Natal</p>
+  <p style="font-size:16px;text-align:right;margin: 10px;">Novo Hamburgo, RS, Brasil</p>
+</div>
+
+
+</div>
+
+</div>
+</section>
+<section class="a">
+<div class="sentence">
+<p><span style="font-size: 27px;">❝</span> <i>09 Tyler Durden.</i></p>
+
+
+<p>O Sargenteante Azevedo atuou como Sargento instrutor durante o ano de 2024 na Base Administrativa da Guarnição de Santa Maria. Entretanto, Azevedo participou das diversas instruções com os recrutas do ano de 2024.</p>
+<p>Azevedo foi o responsável por preparar o Campo de Treinamento para os recrutas do ano de 2024.</p>
+
+<p>O Sargento Azevedo fez o <strong>Curso de Formação de Sargento Temporário</strong> (CFST).</p>
+<div class="table">
+<center>
+<img class="protected-img" width="95%" src="../../assets/img/sgt/azevedoB.jpg" alt="03 azevedo">
+</center>
+<p>A fotografia acima registra Azevedo no cerimonial de CFST que ocorreu em 2021/2.</p>
+</div>
+<br>
+<div class="table">
+  <center>
+    <img class="protected-img" width="95%" src="../../assets/img/sgt/03_azevedo.webp" alt="Azevedo">
+  </center>
+</div>
+<p>Pedro tem gosto musical Rock/Metal e também possui uma habilidade de cantor... Não Tenho Medo De Agir.</p>
+<div class="iframevid" style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 177.7778%;">
+<center>
+<iframe src="https://cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.youtube.com%2Fshorts%2FJtYxPhMKlH4&key=925108d922be940af814f71907a7df4b" style="top: 0; left: 0; width: 95%; padding-bottom: 20px; height: 100%; position: absolute; border: 0;" allowfullscreen scrolling="no" allow="accelerometer *; clipboard-write *; encrypted-media *; gyroscope *; picture-in-picture *; web-share *;">
+</iframe>
+</center>
+</div>
+<p>Além de ser um 3º Sargento, Azevendo também faz jus ao novo e mais nobre título de "PAI".</p>
+<div class="table">
+<center>
+<img class="protected-img" onclick="location.href='https://www.instagram.com/p/DI7WGkKRvaw'" width="95%" src="../../assets/img/sgt/azevedoA.jpg" alt="azevedo e seu filho e sua esposa no parto">
+</center>
+<p onclick="location.href='https://www.instagram.com/p/DI7WGkKRvaw'">Pedro com o seu filho recém nascido Samuel e sua esposa, Rafaella Rolim.</p>
+</div>
+<br>
+<br>
+<div class="table">
+  <p>Fita 2 Lado A</p>
+<center>
+  <img class="protected-img" width="95%" src="../../assets/img/cover/2-A.png" alt="FITA 2 LADO A">
+  <br>
+  <audio controls type="audio/opus">
+    <source src="https://web.archive.org/web/20250216163326/https://www.big-loser.site/A/Audio/FITA-2,-LADO-A.m4a">
+  </audio>
+</center>
+</div>
+
+<p>Redes sociais:</p>
+<div style="display:block; line-break: break-all; 95%;" class="table">
+<center>
+<img class="protected-img" class="icon" onclick="location.href='https://www.facebook.com/profile.php?id=61555010661810'" width="35px" height="35px" src="../../assets/img/other/facebook.png" alt="facebook">
+<p style="font-size: 16px;" onclick="location.href='https://www.facebook.com/profile.php?id=61555010661810'">Pedro Azevedo</p>
+</center>
+  <br>
+
+<center>
+<img class="protected-img" class="icon" onclick="location.href='https://www.instagram.com/pedro.gavriel'" width="35px" height="35px" src="../../assets/img/other/instagram.jpeg" alt="instagram">
+<p class="icon" style="font-size: 16px;" onclick="https://www.instagram.com/pedro.gavriel'">pedro.gavriel <br>(Resctrict) <br>
+<i>916 seguidores</i></p>
+</center>
+<br>
+<center>
+<img class="protected-img" class="icon" onclick="location.href='#blank'" width="35px" height="35px" src="../../assets/img/other/x.png" alt="x">
+<p style="font-size: 16px;" onclick="#blank'">Unknown</p>
+</center>
+</div>
+</div>
+</section>
+<footer>
+</footer>
+
+<script defer src="../../script/js/l0517x333777.js">
+</script>
+
+<style id="archive-inspired-redesign">
+:root{
+ --archive-bg:#0b0d0f;--archive-panel:#14171a;--archive-panel-2:#1b1f23;
+ --archive-text:#e9ecef;--archive-muted:#9ba3aa;--archive-line:#343a40;
+ --archive-red:#c8393d;--archive-red-dark:#84272b;--archive-white:#f4f5f6;
+}
+html,body{background:var(--archive-bg)!important;color:var(--archive-text)!important;min-height:100%;}
+body{filter:none!important;font-family:Arial,Helvetica,sans-serif;line-height:1.65;}
+body.ready{filter:none!important;}
+header{background:#080a0c!important;border-bottom:1px solid var(--archive-line);padding:10px 22px!important;min-height:76px;display:flex!important;align-items:center;justify-content:space-between;position:relative;}
+header h1{font-family:'Input-Sans',Arial,sans-serif!important;font-size:clamp(24px,3vw,34px)!important;letter-spacing:.08em;text-transform:uppercase;color:#f4f5f6!important;margin:8px 0!important;}
+header h1:after{content:' / ARCHIVE';font-size:11px;letter-spacing:.15em;color:var(--archive-red);vertical-align:middle;margin-left:8px;}
+header button,section button{position:static!important;color:var(--archive-white)!important;background:transparent!important;border:1px solid var(--archive-line)!important;border-radius:3px;padding:8px 13px;font-size:20px!important;transition:.2s;}
+header button:hover,section button:hover{border-color:var(--archive-red)!important;color:#fff!important;background:#191d21!important;}
+.x{background:rgba(7,9,11,.97)!important;z-index:1000;padding:90px 7vw 35px;}
+.x button{position:absolute!important;top:22px!important;right:24px!important;font-size:25px!important;}
+section.sidebar{margin:14px 22px 0!important;}
+section.sidebar div.b{margin:0!important;background:var(--archive-panel)!important;border:1px solid var(--archive-line)!important;border-left:3px solid var(--archive-red)!important;border-radius:3px;color:var(--archive-text);}
+section.sidebar div.b details{border:0!important;border-radius:0!important;padding:13px 16px!important;font-size:12px!important;letter-spacing:.08em;text-transform:uppercase;color:var(--archive-text);}
+section.sidebar div.b details summary{font-weight:700;}
+section.sidebar div.b details summary::after{color:var(--archive-red);}
+section.sidebar div.b details a{color:#d7dce0!important;text-decoration:none;margin:12px 12px 0!important;padding:8px 10px;display:inline-block!important;border:1px solid transparent;}
+section.sidebar div.b details a:hover{border-color:var(--archive-line);background:#202428;color:#fff!important;}
+section.a{margin:24px 22px 34px!important;}
+section.a div.sentence{background:transparent!important;padding:0!important;}
+section.a div.sentence p{color:var(--archive-text)!important;font-size:15px!important;line-height:1.85;margin:20px auto!important;max-width:960px;font-family:Arial,Helvetica,sans-serif!important;}
+section.a div.sentence p:first-child{color:var(--archive-muted)!important;}
+section.a div.sentence p strong{color:#fff;}
+h2{color:#f6f7f8!important;font-size:clamp(23px,3vw,34px)!important;letter-spacing:.04em;text-transform:uppercase;margin:22px 12px 12px!important;}
+div.table{margin:24px auto!important;max-width:960px;background:var(--archive-panel)!important;border:1px solid var(--archive-line)!important;border-radius:4px;overflow:hidden;color:var(--archive-text);}
+div.table>center:first-child{padding:14px 10px 4px;}
+div.table img{max-width:calc(100% - 20px);height:auto;object-fit:cover;border-radius:2px;}
+div.table img.protected-img{display:inline-block;}
+div.table>div[style*="display: flex"]{gap:12px;align-items:flex-start;padding:0 12px;border-top:1px solid var(--archive-line);}
+div.table>div[style*="display: flex"] p{font-size:14px!important;line-height:1.45!important;margin:10px!important;max-width:none!important;}
+div.table>div[style*="display: flex"] p:first-child{color:var(--archive-muted)!important;flex:0 0 40%;font-weight:700;}
+div.table>div[style*="display: flex"] p:last-child{text-align:right;flex:1;overflow-wrap:anywhere;}
+div.table audio{max-width:100%;width:min(460px,90%);margin:12px auto 20px;filter:invert(.88) hue-rotate(180deg);}
+div.iframevid{max-width:560px;margin:24px auto!important;}
+iframe{border-radius:4px;}
+img,iframe{margin:10px!important;}
+a{color:#e3e6e8;}a:hover{color:#fff;}
+footer{border-top:1px solid var(--archive-line);margin-top:40px;padding:24px;background:#080a0c;color:var(--archive-muted);}
+@media(min-width:1025px){
+ section.a div.sentence p{font-size:16px!important;margin:22px auto!important;max-width:960px;}
+ div.table{max-width:960px;margin:28px auto!important;}
+ div.table img{max-width:500px;}
+ div.table img.icon{width:56px!important;height:56px!important;object-fit:cover;border-radius:10px;}
+ section.sidebar div.b details a{font-size:13px!important;}
+}
+@media(max-width:600px){
+ header{padding:8px 14px!important;min-height:64px;}
+ header h1{font-size:23px!important;}
+ header h1:after{font-size:9px;margin-left:4px;}
+ header button{padding:7px 10px!important;}
+ section.sidebar{margin:12px 14px 0!important;}
+ section.a{margin:18px 14px 26px!important;}
+ div.table{margin:16px 0!important;border-radius:3px;}
+ div.table>div[style*="display: flex"]{gap:4px;padding:0 6px;}
+ div.table>div[style*="display: flex"] p{font-size:12px!important;margin:9px 5px!important;}
+ div.table>div[style*="display: flex"] p:first-child{flex-basis:38%;}
+ section.a div.sentence p{font-size:14px!important;margin:17px 8px!important;}
+ h2{font-size:22px!important;}
+ .x{padding:80px 20px 25px;}
+}
+</style>
+
+</body>
+
+</html>
